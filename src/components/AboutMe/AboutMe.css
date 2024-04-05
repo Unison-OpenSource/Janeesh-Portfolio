@@ -1,0 +1,12 @@
+.contact-container {
+    margin: 4rem 0;
+    position: relative;
+}
+.contact-container h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.contact-content {
+    display: flex;
+}

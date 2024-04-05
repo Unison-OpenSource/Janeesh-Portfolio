@@ -1,0 +1,27 @@
+[
+    {
+        "title":"projectA",
+        "imagesrc": "./me.jpg",
+        "description":"this is a project made to ",
+        "skills": ["React","Express"],
+        "demo": "https:localhost:5173",
+        "source": "https://github.com/"
+    },
+    {
+        "title":"projectA",
+        "imagesrc": "./me.jpg",
+        "description":"this is a project made to ",
+        "skills": ["React","Express"],
+        "demo": "https:localhost:5173",
+        "source": "https://github.com/"
+    },
+    {
+        "title":"projectA",
+        "imagesrc": "./me.jpg",
+        "description":"this is a project made to ",
+        "skills": ["React","Express"],
+        "demo": "https:localhost:5173",
+        "source": "https://github.com/"
+    }
+]
+
