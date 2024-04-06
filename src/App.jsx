@@ -15,8 +15,8 @@ const App = () => {
       <div className="container">
       <Hero />
       <Skill />
-      <Experience/>
       <Projects />
+      <Experience/>
       <AboutMe />
 
     </div>
