@@ -3,6 +3,7 @@ import be from "../../src/utils/backend.png";
 import lang from "../../src/utils/languages.png";
 import learn from "../../src/utils/learning.gif";
 import soft from "../../src/utils/soft.png";
+import tools from "../../src/utils/tools.png";
 export const SKILLS = [
   {
     title: "Frontend",
@@ -18,15 +19,15 @@ export const SKILLS = [
     title: "Backend",
     icon: be,
     skills: [
-      { skill: "HTMLS", percentage: "80%" },
-      { skill: "CSS3", percentage: "90%" },
-      { skill: "JavaScript", percentage: "75%" },
-      { skill: "React.js", percentage: "80%" },
+      { skill: "Python", percentage: "80%" },
+      { skill: "Node", percentage: "90%" },
+      { skill: "Express", percentage: "75%" },
+      { skill: "MongoDB", percentage: "80%" },
     ],
   },
   {
     title: "Tools",
-    icon: soft,
+    icon: tools,
     skills: [
       { skill: "VS Code", percentage: "80%" },
       { skill: "GitHub", percentage: "90%" },
@@ -59,8 +60,8 @@ export const SKILLS = [
     title: "Other",
     icon: learn,
     skills: [
-      { skill: "E", percentage: "80%" },
-      { skill: "a", percentage: "90%" },
+      { skill: "Critical Thinking", percentage: "80%" },
+      { skill: "Spatial Awareness", percentage: "90%" },
       { skill: "A", percentage: "80%" },
       { skill: "H", percentage: "50%" },
       { skill: "Ge", percentage: "20%" },
@@ -70,17 +71,19 @@ export const SKILLS = [
 export const WORK_EXPERIENCE = [
   {
     title: "Full Stack Developer",
-    date: "march 2024 - present",
-    responsibilities: ["content"],
+    date: "March 2024 - present",
+    responsibilities: ["Building Websites and Learning a lot of things"],
   },
   {
     title: "College Student",
     date: "October 2022 - present",
-    responsibilities: ["content"],
+    responsibilities: [
+      "I was exposed to the reality of the world and got adapted to situtions",
+    ],
   },
   {
     title: "School Student",
     date: "June 2008 - May 2022",
-    responsibilities: ["content"],
+    responsibilities: ["Building a man which this Society needs"],
   },
 ];

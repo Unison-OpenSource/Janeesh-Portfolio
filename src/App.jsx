@@ -4,7 +4,6 @@ import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Skill from './components/Skills/Skill'
 import Experience from './components/Experience/Experience'
-import AboutMe from './components/AboutMe/AboutMe'
 import Projects from './components/Projects/Projects'
 
 
@@ -17,7 +16,6 @@ const App = () => {
       <Skill />
       <Experience/>
       <Projects />
-      {/*<AboutMe />*/}
     </div>
     </>
   )

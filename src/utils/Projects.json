@@ -1,15 +1,15 @@
 [
     {
-        "title":"projectA",
-        "imagesrc": "src/utils/learning.gif",
-        "description":"This is a project made to ",
+        "title":"Website",
+        "imagesrc":"src/utils/logo.png",
+        "description":"This is a project made to show my passion",
         "skills": ["React","Express"],
         "demo": "https:localhost:5173",
-        "source": "https://github.com/"
+        "source": "https://github.com/janeeshgithub/"
     },
     {
         "title":"projectA",
-        "imagesrc": "./me.jpg",
+        "imagesrc": "",
         "description":"this is a project made to ",
         "skills": ["React","Express"],
         "demo": "https:localhost:5173",
@@ -17,7 +17,7 @@
     },
     {
         "title":"projectA",
-        "imagesrc": "./me.jpg",
+        "imagesrc": "",
         "description":"this is a project made to ",
         "skills": ["React","Express"],
         "demo": "https:localhost:5173",
