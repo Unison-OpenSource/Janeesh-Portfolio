@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
         <div className="hero-content">
-            <h2>Never Settle </h2>
+            <h2>Work On Progress Will End Before April 10</h2>
             <p>
                 FullStack Developer | Enthusiast
             </p>
