@@ -19,20 +19,20 @@ const Navbar = () => {
             <a className="menu-item">Projects</a>
         </li>
         <li>
-            <a className="menu-item">About Me</a>
+            <a className="menu-item">Experience</a>
         </li>
         <li>
-            <a className="menu-item">Experience</a>
+            <a className="menu-item">Contact</a>
         </li>
 
         <button className="contact-btn" onClick={() => {}}>
-        PingMe
+        Magic
         </button>
         </ul>
 
          <button className="menu-btn" onClick={()=>{}}>
             <span
-                class="material-symbols-oulined"
+                className="material-symbols-oulined"
                 style={{ fontSize:"1.8rem"}}
             >
             Menu

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Profile from './me.jpg';
 import tech1 from './html-icon.svg';
 import tech2 from './react-js-icon.svg';
@@ -22,8 +22,14 @@ const Hero = () => {
                 <div className="tech1-icon">
                         <img src={tech1} width={40} height={40} alt="" />
                     </div>
+                <div className="tech1-icon">
+                    <img src={tech1}  width={40} height={40} alt="" />
+                </div>
                 <div className="tech2-icon">
-                    <img src={tech2}  width={80} height={80} alt="" />
+                    <img src={tech2}  width={40} height={40} alt="" />
+                </div>
+                <div className="tech2-icon">
+                    <img src={tech2}  width={40} height={40} alt="" />
                 </div>
             </div>
     </section>

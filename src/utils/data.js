@@ -1,9 +1,8 @@
-import backend from  '../../src/assets/images/backend.png'
-import frontend from '../../src/assets/images/frontend.png'
+
 export const SKILLS = [
   {
     title: "Frontend",
-    icon: {frontend},
+    icon: "../../src/assets/images/frontend.png",
     skills: [
       { skill: "HTMLS", percentage: "90%" },
       { skill: "CSS3", percentage: "80%" },
@@ -13,7 +12,7 @@ export const SKILLS = [
   },
   {
     title: "Backend",
-    icon: {},
+    icon: "../../src/assets/images/backend.png",
     skills: [
       { skill: "HTMLS", percentage: "80%" },
       { skill: "CSS3", percentage: "90%" },
@@ -23,7 +22,7 @@ export const SKILLS = [
   },
   {
     title: "Tools",
-    icon: {},
+    icon: "../../src/assets/images/soft.png",
     skills: [
       { skill: "VS Code", percentage: "80%" },
       { skill: "GitHub", percentage: "90%" },
@@ -33,17 +32,17 @@ export const SKILLS = [
   },
   {
     title: "Soft Skills",
-    icon: {},
+    icon: "../../src/assets/images/soft.png",
     skills: [
       { skill: "Leadership", percentage: "80%" },
       { skill: "Communication", percentage: "90%" },
-      { skill: "JavaScript", percentage: "75%" },
-      { skill: "React.js", percentage: "80%" },
+      { skill: "Critical Thinking", percentage: "75%" },
+      { skill: "Reasoning", percentage: "80%" },
     ],
   },
   {
     title: "Languages Spoken",
-    icon: {backend},
+    icon: "../../src/assets/images/languages.png",
     skills: [
       { skill: "English", percentage: "80%" },
       { skill: "Tamil", percentage: "90%" },
@@ -54,37 +53,30 @@ export const SKILLS = [
   },
   {
     title: "Other",
-    icon: {backend},
+    icon: "../../src/assets/images/soft.png",
     skills: [
-      { skill: "English", percentage: "80%" },
-      { skill: "Tamil", percentage: "90%" },
-      { skill: "Telugu", percentage: "80%" },
-      { skill: "Hindi", percentage: "50%" },
-      { skill: "German", percentage: "20%" },
+      { skill: "E", percentage: "80%" },
+      { skill: "a", percentage: "90%" },
+      { skill: "", percentage: "80%" },
+      { skill: "H", percentage: "50%" },
+      { skill: "Ge", percentage: "20%" },
     ],
   },
-  
-  
 ];
 export const WORK_EXPERIENCE = [
   {
-    title: "Android App Developer",
-    date: "march 2021 - present",
+    title: "Full Stack Developer",
+    date: "march 2024 - present",
     responsibilities: ["content"],
   },
   {
-    title: "Android App Developer",
-    date: "march 2021 - present",
+    title: "College Student",
+    date: "October 2022 - present",
     responsibilities: ["content"],
   },
   {
-    title: "Android App Developer",
-    date: "march 2021 - present",
-    responsibilities: ["content"],
-  },
-  {
-    title: "Android App Developer",
-    date: "march 2021 - present",
+    title: "School Student",
+    date: "June 2008 - May 2022",
     responsibilities: ["content"],
   },
 ];

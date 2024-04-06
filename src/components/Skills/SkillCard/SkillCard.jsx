@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './SkillCard.css'
 
 const SkillCard = ({ title, iconUrl, isActive, onClick }) => {
@@ -8,7 +8,7 @@ const SkillCard = ({ title, iconUrl, isActive, onClick }) => {
       onClick={() => onClick()}
     >
     <div className="skill-icon">
-        <img src="src\assets\learning.gif" alt={title} />
+        <img src={iconUrl} alt={title} />
     </div>
 
     <span>{title}</span>
