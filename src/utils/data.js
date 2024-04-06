@@ -1,8 +1,12 @@
-import t from "../../src/utils/frontend.png";
+import fe from "../../src/utils/frontend.png";
+import be from "../../src/utils/backend.png";
+import lang from "../../src/utils/languages.png";
+import learn from "../../src/utils/learning.gif";
+import soft from "../../src/utils/soft.png";
 export const SKILLS = [
   {
     title: "Frontend",
-    icon: t,
+    icon: fe,
     skills: [
       { skill: "HTMLS", percentage: "90%" },
       { skill: "CSS3", percentage: "80%" },
@@ -12,7 +16,7 @@ export const SKILLS = [
   },
   {
     title: "Backend",
-    icon: "../../src/utils/images/backend.png",
+    icon: be,
     skills: [
       { skill: "HTMLS", percentage: "80%" },
       { skill: "CSS3", percentage: "90%" },
@@ -22,7 +26,7 @@ export const SKILLS = [
   },
   {
     title: "Tools",
-    icon: "../../src/utils/images/soft.png",
+    icon: soft,
     skills: [
       { skill: "VS Code", percentage: "80%" },
       { skill: "GitHub", percentage: "90%" },
@@ -32,7 +36,7 @@ export const SKILLS = [
   },
   {
     title: "Soft Skills",
-    icon: "../../src/utils/images/soft.png",
+    icon: soft,
     skills: [
       { skill: "Leadership", percentage: "80%" },
       { skill: "Communication", percentage: "90%" },
@@ -42,7 +46,7 @@ export const SKILLS = [
   },
   {
     title: "Languages Spoken",
-    icon: "../../src/utils/images/languages.png",
+    icon: lang,
     skills: [
       { skill: "English", percentage: "80%" },
       { skill: "Tamil", percentage: "90%" },
@@ -53,7 +57,7 @@ export const SKILLS = [
   },
   {
     title: "Other",
-    icon: "../../src/assets/images/soft.png",
+    icon: learn,
     skills: [
       { skill: "E", percentage: "80%" },
       { skill: "a", percentage: "90%" },

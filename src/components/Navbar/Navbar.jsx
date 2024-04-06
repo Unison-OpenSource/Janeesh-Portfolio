@@ -25,7 +25,7 @@ const Navbar = () => {
             <a className="menu-item">Contact</a>
         </li>
 
-        <button className="contact-btn" onClick={() => {}}>
+        <button className="contact-btn" onClick={() => {alert('Hi Thanks for Showing Interest ')}}>
         Magic
         </button>
         </ul>
@@ -35,7 +35,6 @@ const Navbar = () => {
                 className="material-symbols-oulined"
                 style={{ fontSize:"1.8rem"}}
             >
-            Menu
             </span>
         </button>
     </div>
