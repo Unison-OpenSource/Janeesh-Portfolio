@@ -1,7 +1,8 @@
+import t from "../../src/utils/frontend.png";
 export const SKILLS = [
   {
     title: "Frontend",
-    icon: "../../src/utils/frontend.png",
+    icon: t,
     skills: [
       { skill: "HTMLS", percentage: "90%" },
       { skill: "CSS3", percentage: "80%" },
