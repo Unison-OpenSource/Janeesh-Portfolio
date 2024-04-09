@@ -23,6 +23,7 @@ export const SKILLS = [
       { skill: "Node", percentage: "90%" },
       { skill: "Express", percentage: "75%" },
       { skill: "MongoDB", percentage: "80%" },
+      { skill: "SQL", percentage: "80%"},
     ],
   },
   {
@@ -41,6 +42,8 @@ export const SKILLS = [
     skills: [
       { skill: "Leadership", percentage: "80%" },
       { skill: "Communication", percentage: "90%" },
+      { skill: "Problem-Solving", percentage: "95%" },
+      { skill: "Teamwork", percentage: "70%"}
       { skill: "Critical Thinking", percentage: "75%" },
       { skill: "Reasoning", percentage: "80%" },
     ],
@@ -62,9 +65,9 @@ export const SKILLS = [
     skills: [
       { skill: "Critical Thinking", percentage: "80%" },
       { skill: "Spatial Awareness", percentage: "90%" },
-      { skill: "A", percentage: "80%" },
-      { skill: "H", percentage: "50%" },
-      { skill: "Ge", percentage: "20%" },
+      { skill: "Time Management", percentage: "80%" },
+      { skill: "Financial Literacy", percentage: "50%" },
+      { skill: "Project Management", percentage: "20%" },
     ],
   },
 ];

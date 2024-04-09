@@ -6,7 +6,7 @@ import Skill from './components/Skills/Skill'
 import Experience from './components/Experience/Experience'
 import Projects from './components/Projects/Projects'
 import About from  './components/AboutMe/AboutMe'
-import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 
 const App = () => {
