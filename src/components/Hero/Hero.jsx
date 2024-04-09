@@ -1,7 +1,5 @@
 import React from 'react';
 import Profile from './me.png';
-import tech1 from './html-icon.svg';
-import tech2 from './react-js-icon.svg';
 import './Hero.css'
 const Hero = () => {
   return (
@@ -9,7 +7,7 @@ const Hero = () => {
         <div className="hero-content">
             <h2>All our dreams can come true, if we have the courage to pursue them</h2>
             <p>
-                FullStack Developer | AI  Enthusiast | Coder | Influencer<br/>
+                FullStack Developer | AI  Enthusiast | Coder | Content Creator<br/>
                 
                 
             </p>

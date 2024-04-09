@@ -1,22 +1,24 @@
-import React from 'react'
+import React from 'react';
 
-const ProjectCard = ({
-    project : { title,imagesrc,description,skills,demo,source
-}}) => {
+const ProjectCard = ({ project, id }) => {
+  const { title, imagesrc, description, skills, demo, source } = project;
+
   return (
     <div key={id}>
-                <img src={project.imagesrc} alt={`image of ${project.title}` }/>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <ul>{
-        project.skills.map((skill, id) => {
-        <li key={id}>{skill}</li>
-    })}</ul>
-    <div>
-    <a href={project.demo}>Demo</a>
+      <img src={imagesrc} alt={`image of ${title}`} />
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <ul>
+        {/* Use skills.map to render each skill as an li element */}
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
+      <div>
+        <a href={demo}>Demo</a>
+      </div>
     </div>
-            </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

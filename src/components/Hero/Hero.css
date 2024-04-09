@@ -69,47 +69,15 @@
     justify-content: center;
     text-align: center;
     border-radius: 0.65rem;
-    border:1.5px solid #f1285e;
+    border:1.5px solid #f1185e;
+    
 }
-.tech1-icon img {
-    width: 3rem;
-    height: 3rem;
-    transition: all 0.3s ease;
+.tech-icon img{
+    max-width: 100% ;
+    box-shadow: 0 6px 40px #ff0040
 
 }
-.tech1-icon {
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 0.65rem;
-    border: 1.5px solid #6852ba;
-    transform: translate(90%,-20%);
-}
-.tech2-icon {
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 0.65rem;
-    border: 1.5px solid #6852ba;
-    position: left;
-    transform: translate(-50%,-158%);
-}
-.tech2-icon img {
-    width: 3rem;
-    height: 3rem;
-    transition: all 0.3s ease;
-}
-.tech1-icon img {
-    width: 3rem;
-    height: 3rem;
-    transition: all 0.3s ease;
-}
+
 
 .hero-img > div >  img:hover,.tech-icon img:hover {
     transform:translateY(-0.5rem);
