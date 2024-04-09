@@ -1,25 +1,25 @@
 [
     {
         "title":"Website",
-        "imagesrc":"src/utils/logo.png",
+        "imagesrc":"src/assets/images/logo.png",
         "description":"This is a project made to show my passion",
         "skills": ["React","Express"],
         "demo": "https:localhost:5173",
         "source": "https://github.com/janeeshgithub/"
     },
     {
-        "title":"projectA",
+        "title":"CHATBOT",
         "imagesrc": "",
         "description":"this is a project made to ",
-        "skills": ["React","Express"],
+        "skills": ["AI","Python"],
         "demo": "https:localhost:5173",
         "source": "https://github.com/"
     },
     {
-        "title":"projectA",
+        "title":"ProjectX",
         "imagesrc": "",
-        "description":"this is a project made to ",
-        "skills": ["React","Express"],
+        "description":"Secret Project",
+        "skills": ["Essential for Growth"],
         "demo": "https:localhost:5173",
         "source": "https://github.com/"
     }
