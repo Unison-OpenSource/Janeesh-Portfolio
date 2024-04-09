@@ -5,6 +5,7 @@ import email from "./email.png";
 import github from "./github.svg";
 import  linkedin from "./LinkedIN.png";
 import Instagram from "./Instagram.png";
+import AboutForm from "./AboutForm";
 const AboutMe = () => {
   return (
     <section className="contact-container">
@@ -20,7 +21,7 @@ const AboutMe = () => {
        <Aboutmeinfocard iconUrl={Instagram} 
        text="janeeshp_"/>
       <div style={{ flex: 1 }}></div>
-
+      <AboutForm/>
     </section>
   );
 };

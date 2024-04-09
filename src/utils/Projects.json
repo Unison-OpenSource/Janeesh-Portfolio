@@ -1,7 +1,7 @@
 [
     {
         "title":"Website",
-        "imagesrc":"src/assets/images/logo.png",
+        "imagesrc":"../src/components/AboutMe/Instagram.png",
         "description":"This is a project made to show my passion",
         "skills": ["React","Express"],
         "demo": "https:localhost:5173",
