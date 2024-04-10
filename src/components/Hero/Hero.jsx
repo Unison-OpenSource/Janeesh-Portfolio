@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
         <div className="hero-content">
-            <h2>All our dreams can come true, if we have the courage to pursue them</h2>
+            <h2>The Future Belongs To Those Who Believe In The Beauty Of Their Dreams</h2>
             <p>
                 FullStack Developer | AI  Enthusiast | Coder | Content Creator<br/>
                 

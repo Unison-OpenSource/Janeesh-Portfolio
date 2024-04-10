@@ -25,7 +25,7 @@ const Navbar = () => {
             <a className="menu-item">Contact</a>
         </li>
 
-        <button className="contact-btn" onClick={() => {alert('Hi Thanks for Showing Interest ')}}>
+        <button className="contact-btn" onClick={() => {alert('Hi Thanks for Showing Interest THIS IS UNDER CONSTRUCTION')}}>
         Magic
         </button>
         </ul>

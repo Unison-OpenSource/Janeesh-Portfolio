@@ -6,7 +6,7 @@
   
   .project-card {
     border-radius: 0.65rem;
-     border: 1.5px solid #6751b9;
+     border: 1.5px solid #0fff;
      padding:2.5rem;
      text-align:center;
      background: rgba(22,17,47,0.398);
@@ -20,6 +20,7 @@
     width: 100%;
     height: auto;
     border-radius: 5px;
+    border: 1.5px  solid #0fff;
   }
   
   .project-links a {

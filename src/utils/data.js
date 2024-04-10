@@ -4,13 +4,14 @@ import lang from "../../src/utils/languages.png";
 import learn from "../../src/utils/learning.gif";
 import soft from "../../src/utils/soft.png";
 import tools from "../../src/utils/tools.png";
+
 export const SKILLS = [
   {
     title: "Frontend",
     icon: fe,
     skills: [
-      { skill: "HTMLS", percentage: "90%" },
-      { skill: "CSS3", percentage: "80%" },
+      { skill: "HTML", percentage: "90%" },
+      { skill: "CSS", percentage: "70%" },
       { skill: "JavaScript", percentage: "65%" },
       { skill: "React.js", percentage: "60%" },
     ],
@@ -20,20 +21,20 @@ export const SKILLS = [
     icon: be,
     skills: [
       { skill: "Python", percentage: "80%" },
-      { skill: "Node", percentage: "90%" },
-      { skill: "Express", percentage: "75%" },
-      { skill: "MongoDB", percentage: "80%" },
-      { skill: "SQL", percentage: "80%"},
+      { skill: "Node", percentage: "80%" },
+      { skill: "Express", percentage: "65%" },
+      { skill: "MongoDB", percentage: "60%" },
+      { skill: "SQL", percentage: "70%"},
     ],
   },
   {
     title: "Tools",
     icon: tools,
     skills: [
-      { skill: "VS Code", percentage: "80%" },
+      { skill: "VisualStudio Code", percentage: "80%" },
       { skill: "GitHub", percentage: "90%" },
-      { skill: "Brain", percentage: "75%" },
-      { skill: "Laptop", percentage: "100%" },
+      { skill: "MongoDB Compass", percentage: "75%" },
+      { skill: "Postman", percentage: "60%" },
     ],
   },
   {
@@ -41,10 +42,10 @@ export const SKILLS = [
     icon: soft,
     skills: [
       { skill: "Leadership", percentage: "80%" },
-      { skill: "Communication", percentage: "90%" },
-      { skill: "Problem-Solving", percentage: "95%" },
-      { skill: "Teamwork", percentage: "70%"},
-      { skill: "Critical Thinking", percentage: "75%" },
+      { skill: "Communication", percentage: "85%" },
+      { skill: "Problem-Solving", percentage: "90%" },
+      { skill: "Teamwork", percentage: "75%"},
+      { skill: "Critical Thinking", percentage: "85%" },
       { skill: "Reasoning", percentage: "80%" },
     ],
   },
@@ -67,26 +68,26 @@ export const SKILLS = [
       { skill: "Spatial Awareness", percentage: "90%" },
       { skill: "Time Management", percentage: "80%" },
       { skill: "Financial Literacy", percentage: "50%" },
-      { skill: "Project Management", percentage: "20%" },
+      { skill: "Project Management", percentage: "70%" },
     ],
   },
 ];
 export const WORK_EXPERIENCE = [
   {
-    title: "Full Stack Developer",
+    title: "DEVELOPER",
     date: "March 2024 - present",
     responsibilities: ["Building Websites and Learning a lot of things"],
   },
   {
-    title: "College Student",
+    title: "B-TECH",
     date: "October 2022 - present",
     responsibilities: [
-      "I was exposed to the reality of the world and got adapted to situtions",
+      "Pursuing Btech in Computer Science and Business Systems",
     ],
   },
   {
-    title: "School Student",
+    title: "HSC",
     date: "June 2008 - May 2022",
-    responsibilities: ["Building a man which this Society needs"],
+    responsibilities: ["Completed my Schooling at SBOA Matriculation Hr Sec School , Anna Nagar , Chennai"],
   },
 ];

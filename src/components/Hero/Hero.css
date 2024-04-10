@@ -69,12 +69,12 @@
     justify-content: center;
     text-align: center;
     border-radius: 0.65rem;
-    border:1.5px solid #f1185e;
+    border:1.5px solid #c806f9;
     
 }
 .tech-icon img{
     max-width: 100% ;
-    box-shadow: 0 6px 40px #ff0040
+    box-shadow: 0 6px 40px #c806f9
 
 }
 
