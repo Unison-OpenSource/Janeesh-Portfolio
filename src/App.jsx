@@ -7,6 +7,7 @@ import Experience from './components/Experience/Experience'
 import Projects from './components/Projects/Projects'
 import About from  './components/AboutMe/AboutMe'
 import Footer from './components/Footer/Footer'
+import Ac from './components/AnimatedCard/AnimatedCard'
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
       <Experience/>
       <Projects />
       <About/>
-      <Footer/>
+      <Ac></Ac>
+      <Footer/> 
     </div>
     </>
   )

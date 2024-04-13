@@ -1,0 +1,32 @@
+[
+    {
+      "title": "SkillRack",
+      "content": "Daily Challenge and Daily Tests",
+      "image": "../src/assets/images/sk.jpg",
+      "additionalContent": "",
+      "visitLink": "https://www.instagram.com/skillrackjp/"
+    },
+    {
+      "title": "I am NEO",
+      "content": "Solutions for NEO PORTAL",
+      "image": "https://tse2.mm.bing.net/th/id/OIG3.lfyd4Ri5YIDWZeZ8E1Gw?w=270&h=270&c=6&r=0&o=5&dpr=1.4&pid=ImgGn",
+      "additionalContent": "",
+      "visitLink": "https://www.instagram.com/iamneo685/"
+    },
+    {
+       
+      "title": "JP",
+      "content":"Personal and Educational Stuff" ,
+      "image": " ../src/assets/images/jp insta.jpg",
+      "additionalContent": "",
+      "visitLink": "https://www.instagram.com/janeeshp_/"
+    },
+    {
+        "title": "Linked In",
+        "content": "Professional",
+        "image":"../src/assets/images/linkjp.jpg",
+        "additionalContent": "More details about card 3.",
+        "visitLink": "https://www.linkedin.com/in/janeesh-p-880963250/"
+      }
+  ]
+  
