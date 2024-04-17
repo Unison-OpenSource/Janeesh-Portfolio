@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Quote from './components/quote/quote'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Skill from './components/Skills/Skill'
@@ -16,6 +17,7 @@ const App = () => {
     <Navbar/>
     <div className="container">
       <Hero />
+      <Quote/>
       <Skill />
       <Projects/>
       <Experience/>

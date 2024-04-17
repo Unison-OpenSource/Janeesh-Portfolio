@@ -11,6 +11,9 @@ const Hero = () => {
                 
                 
             </p>
+            <p>
+
+            </p>
             </div>
 
             <div className="hero-img">
