@@ -33,7 +33,7 @@ const Navbar = () => {
               <a className="menu-item" onClick={() => scrollToSection('contact')}>Contact</a>
             </li>
             <li>
-              <a className="menu-item" onClick={() => scrollToSection('ac')}>Channels</a>
+              <a className="menu-item" onClick={() => scrollToSection('ac')}>Channel</a>
             </li>
           </ul>
 
