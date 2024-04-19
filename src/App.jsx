@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
@@ -16,21 +15,11 @@ const App = () => {
     <>
       <Navbar />
       <div className="container">
-        <div id="home">
-          <Hero />
-        </div>
-        <div id="skills">
-          <Skill />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="experience">
-          <Experience />
-        </div>
-        <div id="contact">
-          <About />
-        </div>
+        <div id="home"><Hero /></div>
+        <div id="skills"><Skill /></div>
+        <div id="projects"><Projects /></div>
+        <div id="experience"><Experience /></div>
+        <div id="contact"><About /></div>
         <Quote />
         <Ac />
         <Footer />
