@@ -20,8 +20,8 @@ const App = () => {
         <div id="projects"><Projects /></div>
         <div id="experience"><Experience /></div>
         <div id="ac"><Ac/></div>
-        <div id="contact"><About /></div>
         <Quote />
+        <div id="contact"><About /></div>
         <Footer />
       </div>
     </>

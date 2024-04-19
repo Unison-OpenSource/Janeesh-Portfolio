@@ -30,11 +30,12 @@ const Navbar = () => {
               <a className="menu-item" onClick={() => scrollToSection('experience')}>Experience</a>
             </li>
             <li>
-              <a className="menu-item" onClick={() => scrollToSection('contact')}>Contact</a>
-            </li>
-            <li>
               <a className="menu-item" onClick={() => scrollToSection('ac')}>Channel</a>
             </li>
+            <li>
+              <a className="menu-item" onClick={() => scrollToSection('contact')}>Contact</a>
+            </li>
+            
           </ul>
 
           <button className="contact-btn" onClick={() => { alert('Hi Thanks for Showing Interest THIS IS UNDER CONSTRUCTION') }}>

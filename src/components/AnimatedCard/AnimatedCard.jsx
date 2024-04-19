@@ -17,6 +17,8 @@ const AnimatedCard = () => {
   return (
     <>
     <h1>Channels</h1>
+    <br/>
+    <h1></h1>
     <div className="projects-container">
       {cardsData.map((card, index) => (
         <motion.div
