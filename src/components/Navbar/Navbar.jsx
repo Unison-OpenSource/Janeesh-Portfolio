@@ -38,7 +38,7 @@ const Navbar = () => {
             
           </ul>
 
-          <button className="contact-btn" onClick={() => { alert('My num= 98X11 971XX , Scroll to the end to find X?') }}>
+          <button className="contact-btn" onClick={() => { alert('YOU CLICKED THE WRONG BUTTON') }}>
             Magic
           </button>
         </div>

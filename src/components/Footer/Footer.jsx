@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer()
 {
   return (<>
-    <div className='Footer'>❤❤ Janeesh P ❤❤<br/>THANKS FOR VISITING<br/>Love you Guys<br/>X=4</div>
+    <div className='Footer'>❤❤ Janeesh P ❤❤<br/>THANKS FOR VISITING<br/>Love you Guys</div>
     </>
   )
 }
