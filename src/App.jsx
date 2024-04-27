@@ -20,8 +20,6 @@ const App = () => {
         <div id="projects"><Projects /></div>
         <div id="experience"><Experience /></div>
         <div id="ac"><Ac/></div>
-        <h1><br/>Follow  👆 <br/> Like👍 <br/> Stay tuned🎶 <br/><br/></h1>
-
         <Quote/>
         <br/>
         <div id="contact"><About /></div>
