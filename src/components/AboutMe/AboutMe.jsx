@@ -18,8 +18,6 @@ const AboutMe = () => {
        text="janeeshgithub"/>
        <Aboutmeinfocard iconUrl={linkedin} 
        text="Janeesh P"/>
-       <Aboutmeinfocard iconUrl={Instagram} 
-       text="janeeshp_"/>
       <div style={{ flex: 1 }}></div>
       <AboutForm/>
     </section>
