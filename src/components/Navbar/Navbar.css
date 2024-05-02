@@ -19,8 +19,9 @@
 }
 
 .logo {
-    width: 7rem;
-    height: auto;
+    width: 100px;
+  height: auto; 
+  margin-right: 20px;
 }
 
 .nav-content ul {
