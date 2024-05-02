@@ -14,8 +14,6 @@ const Navbar = () => {
     <>
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img className="logo" src={logo} alt="JANEESH P" />
-
           <ul>
             <li>
               <a className="menu-item" onClick={() => scrollToSection('home')}>Hero</a>
@@ -35,8 +33,9 @@ const Navbar = () => {
             <li>
               <a className="menu-item" onClick={() => scrollToSection('contact')}>Contact</a>
             </li>
-            
           </ul>
+
+          <img className="logo" src={logo} alt="JANEESH P" /> {/* Moved the logo after the menu */}
 
           <button className="contact-btn" onClick={() => { alert('YOU CLICKED THE WRONG BUTTON') }}>
             Magic
@@ -48,3 +47,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
