@@ -1,116 +1,118 @@
 .nav-wrapper {
-    background: rgba(0,0,0,0.1);
-    padding: 0.5rem 0;
-    position:sticky;
-    top: 0;
-    z-index: 30;
-    backdrop-filter: blur(50px);
-
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(50px);
 }
 
 .nav-content {
-    max-width: 1300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-    margin: 0 auto;
-
+  max-width: 95%; /* Adjust max-width for smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem; /* Adjust padding for smaller screens */
+  margin: 0 auto;
 }
 
 .logo {
-    width: 100px;
-  height: auto; 
-  margin-right: 20px;
+  width: 80px; /* Adjust logo width for smaller screens */
+  height: auto;
+  margin-right: 10px; /* Adjust margin for smaller screens */
 }
 
 .nav-content ul {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    list-style:none;
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically on small screens */
+  align-items: flex-end; /* Align menu items to the right on small screens */
+  gap: 1rem; /* Add spacing between menu items */
+  list-style: none;
 }
 
 .nav-content li {
-    margin: 0 1.5rem;
+  margin: 0; /* Remove margin for list items */
 }
 
 .menu-item {
-    text-decoration: none;
-    font-size: 1.15rem;
-    font-weight: 500;
-    color:white;
-    position: relative;
-    cursor: pointer;
-}
-.menu-item::before {
-    content: " ";
-    width: 2rem;
-    height: 0.2rem;
-    background:linear-gradient(90deg, #5effff 0%, #0356fc 100%);
-    border-radius: 0.5rem;
-    position:absolute;
-    bottom: -0.6rem;
-    opacity: 0;
-    transform:translateX(-1.5rem);
-    transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1.1rem; /* Adjust font size for smaller screens */
+  font-weight: 500;
+  color: white;
+  position: relative;
+  cursor: pointer;
 }
 
-.menu-item:hover::before{
-    width:100%;
-    transform:translateX(0);
-    opacity: 1;
+.menu-item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #5effff 0%, #0356fc 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .contact-btn {
-    font-size:0.9rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:white;
-    background:linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
-    padding: 0.6;
-    border:none;
-    outline:1.6px solid transparent;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    transition: all 0.3 ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  padding: 0.6rem 1rem; /* Adjust padding for smaller screens */
+  border: none;
+  outline: 1.6px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3 ease;
 }
+
 .contact-btn:hover {
-    color: #5effff;
-    background: #000;
-    outline: 1.6px solid #5effff;
+  color: #5effff;
+  background: #000;
+  outline: 1.6px solid #5effff;
 }
+
 .menu-btn {
-    display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size:1.5rem;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 0.4rem;
-    color: #fff;
-    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
-    line-height: 0;
-    cursor: pointer;
-    transition: all 0.4s ease;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+  line-height: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.menu-btn:hover {
+  color: #a993fe;
+  background: #000;
+  border: 1px solid #a993fe;
+}
+
+@media (max-width: 769px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-content ul {
     display: none;
+  }
 }
 
-.menu-btn:hover { 
-    color:#a993fe;
-    background: #000;
-    border: 1px solid #a993fe;
-}
-
-@media (max-width: 769px){
-    .menu-btn { 
-        display:block;
-
-    }
-    .nav-content ul {
-        display:none;
-    }
-}
