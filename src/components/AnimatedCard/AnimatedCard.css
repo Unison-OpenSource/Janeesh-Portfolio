@@ -1,17 +1,11 @@
 .card {
-  flex: 0 0 calc(50% - 20px); /* Adjust card width for smaller screens */
+  flex: 0 0 calc(33.33% - 20px); /* Adjust card width here */
   background-color: #0000ff;
   padding: 1rem;
   border-radius: 0.2rem;
   cursor: pointer;
   box-sizing: border-box;
   transition: transform 0.3s ease; /* Smooth transition on hover */
-
-
-  @media (max-width: 768px) {
-    flex: 0 0 calc(100% - 20px); /* Full width for smaller screens */
-    margin-bottom: 1rem; /* Add some margin between cards */
-  }
 
   &:hover {
     transform: translateY(-5px); /* Optional: Add hover effect */
@@ -33,7 +27,7 @@
 
 .card img {
   width: 100%;
-  height: auto; /* Ensure image height adjusts proportionally */
+  height: 150px; /* Adjust image height */
   object-fit: cover;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
@@ -54,4 +48,3 @@
   border-radius: 0.3rem;
   cursor: pointer;
 }
-
