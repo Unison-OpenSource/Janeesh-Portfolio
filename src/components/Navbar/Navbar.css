@@ -106,10 +106,7 @@
   background: #000;
   border: 1px solid #a993fe;
 }
-@media (max-width: 769px) {
-  .menu-btn {
-    display: block;
-  }
+
 
   .nav-content ul {
     display: none;
