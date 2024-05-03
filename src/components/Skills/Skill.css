@@ -20,6 +20,7 @@
   left: -3rem; /* Adjust left position for smaller screens */
 }
 
+
 .skills-container::before {
   background: #9e51b9;
   bottom: 0;
