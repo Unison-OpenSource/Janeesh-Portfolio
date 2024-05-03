@@ -1,14 +1,6 @@
-.Footer {
-  text-align: center;
-  font-size: 0.8rem;
-  padding: 1rem;
-  background: #000000;
-}
-
-/* Adjustments for smaller screen
-@media (max-width: 768px) {
-  .Footer {
-    font-size: 0.7rem; /* Reduce font size for smaller screens */
-    padding: 0.5rem; /* Reduce padding for smaller screens */
-  }
+.Footer{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    background:#000000
 }
