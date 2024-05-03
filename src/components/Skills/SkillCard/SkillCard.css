@@ -40,11 +40,6 @@
   object-fit: contain;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .skills-card {
-    padding: 1rem; /* Further adjust padding for smaller screens */
-  }
 
   .skills-card span {
     font-size: 1rem; /* Further adjust font size for smaller screens */
