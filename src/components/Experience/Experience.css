@@ -1,19 +1,9 @@
 .experience-container {
-  margin: 2rem 0; /* Reduce top and bottom margin for smaller screens */
-  position: relative;
+    margin: 4rem 0;
+    position: relative;
 }
-
 .experience-container h5 {
-  font-size: 1.5rem; /* Reduce font size for smaller screens */
-  font-weight: 600;
-  margin-bottom: 3rem; /* Reduce bottom margin for smaller screens */
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
 }
-
-/* Adjustments for smaller screen
-@media (max-width: 768px) {
-  .experience-container h5 {
-    font-size: 1.2rem; /* Further reduce font size for smaller screens */
-    margin-bottom: 2rem; /* Further reduce bottom margin for smaller screens */
-  }
-}
-
