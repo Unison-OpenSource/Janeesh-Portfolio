@@ -14,6 +14,7 @@ const Navbar = () => {
     <>
       <nav className="nav-wrapper">
         <div className="nav-content">
+          <img className="logo" src={logo} alt="JANEESH P" /> {/* Moved the logo after the menu */}
           <ul>
             <li>
               <a className="menu-item" onClick={() => scrollToSection('home')}>Hero</a>
@@ -35,7 +36,6 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <img className="logo" src={logo} alt="JANEESH P" /> {/* Moved the logo after the menu */}
 
           <button className="contact-btn" onClick={() => { alert('YOU CLICKED THE WRONG BUTTON') }}>
             Magic
