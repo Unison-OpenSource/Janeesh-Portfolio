@@ -1,12 +1,11 @@
 .container {
-  max-width: 95%; /* Adjust max-width for smaller screens */
-  margin: 0 auto;
-  position: relative;
-}
+    max-width: 1300px !important;
+    margin: 0 auto;
+    position: relative;
 
-@media (max-width: 1300px) {
-  .container {
-    padding: 0 1.5rem; /* Adjust padding for smaller screens */
-  }
 }
-
+@media (max-width:1300px){
+    .container {
+        padding: 0 1.5rem;
+    }
+}
