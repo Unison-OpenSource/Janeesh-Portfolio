@@ -71,14 +71,6 @@
 }
 
 
-
-@media (max-width: 768px) {
-  .skills-container::after,
-  .skills-container::before {
-    width: 14rem; /* Further adjust width for smaller screens */
-    height: 14rem; /* Further adjust height for smaller screens */
-  }
-
   .skills-container h5 {
     font-size: 1.5rem; /* Further adjust font size for smaller screens */
     margin-bottom: 2rem; /* Further adjust margin for smaller screens */
