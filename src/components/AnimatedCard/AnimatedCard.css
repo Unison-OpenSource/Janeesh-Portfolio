@@ -7,7 +7,7 @@
   box-sizing: border-box;
   transition: transform 0.3s ease; /* Smooth transition on hover */
 
-  /* Adjust card styles for small screens */
+
   @media (max-width: 768px) {
     flex: 0 0 calc(100% - 20px); /* Full width for smaller screens */
     margin-bottom: 1rem; /* Add some margin between cards */
