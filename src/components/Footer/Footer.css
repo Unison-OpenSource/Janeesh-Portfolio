@@ -5,7 +5,7 @@
   background: #000000;
 }
 
-/* Adjustments for smaller screens */
+/* Adjustments for smaller screen
 @media (max-width: 768px) {
   .Footer {
     font-size: 0.7rem; /* Reduce font size for smaller screens */
