@@ -1,6 +1,6 @@
 .hero-container {
     display: flex;
-    align-items: space-between;
+    align-items: center;
     position:relative
 
 }
