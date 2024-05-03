@@ -9,7 +9,7 @@
   margin-bottom: 3rem; /* Reduce bottom margin for smaller screens */
 }
 
-/* Adjustments for smaller screens */
+/* Adjustments for smaller screen
 @media (max-width: 768px) {
   .experience-container h5 {
     font-size: 1.2rem; /* Further reduce font size for smaller screens */
