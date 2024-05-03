@@ -15,7 +15,6 @@
 .skills-card.active {
   background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
 }
-
 .skills-card span {
   font-size: 1.1rem; /* Adjust font size for smaller screens */
   font-weight: 500;
