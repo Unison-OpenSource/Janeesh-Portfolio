@@ -1,60 +1,39 @@
 .skills-card {
-  border-radius: 0.65rem;
-  border: 1.5px solid #7c5fe6;
-  padding: 1.5rem; /* Adjust padding for smaller screens */
-  text-align: center;
-  background: rgba(22, 17, 47, 0.398);
-  backdrop-filter: blur(1rem);
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 1.5rem; /* Adjust margin for smaller screens */
+     border-radius: 0.65rem;
+     border: 1.5px solid #7c5fe6;
+     padding:2.5rem;
+     text-align:center;
+     background: rgba(22,17,47,0.398);
+     backdrop-filter: blur(1rem);
+     position: relative;
+     cursor: pointer;
+     transition:all 0.3s ease;
+     margin-bottom: 2rem;
 }
-
 .skills-card:hover,
 .skills-card.active {
-  background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+    background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
 }
 .skills-card span {
-  font-size: 1.1rem; /* Adjust font size for smaller screens */
-  font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .skill-icon {
-  width: 3rem; /* Adjust width for smaller screens */
-  height: 3rem; /* Adjust height for smaller screens */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2a2252;
-  border-radius: 0.65rem;
-  border: 1.5px solid #6852ba;
-  position: absolute;
-  top: -1rem;
-  left: -1rem;
+    width:4rem;
+    height: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #2a2252;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6852ba;
+    position: absolute;
+    top: -1rem;
+    left: -1rem ;
 }
-
 .skill-icon img {
-  width: 2rem; /* Adjust image width for smaller screens */
-  height: auto;
-  object-fit: contain;
+    width: 2.4rem;
+    height:auto;
+    object-fit: contain;
 }
-
-
-  .skills-card span {
-    font-size: 1rem; /* Further adjust font size for smaller screens */
-  }
-
-  .skill-icon {
-    width: 2.5rem; /* Further adjust width for smaller screens */
-    height: 2.5rem; /* Further adjust height for smaller screens */
-    top: -0.5rem; /* Further adjust top position for smaller screens */
-    left: -0.5rem; /* Further adjust left position for smaller screens */
-  }
-
-  .skill-icon img {
-    width: 1.8rem; /* Further adjust image width for smaller screens */
-  }
-}
-
-
