@@ -14,7 +14,7 @@ const Hero = () => {
       
       <div className="hero-img">
         <div className="tech-icon">
-          <img src={Profile} width={400} height={400} alt="" />
+          <img src={Profile} height={400} alt="" />
         </div>
       </div>
     </section>
