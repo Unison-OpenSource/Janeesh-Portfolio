@@ -10,7 +10,7 @@
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
-    background: #dc075c;
+    background: #2f39f9;
     position: absolute;
     z-index: -1;
     filter: blur(225px);
@@ -70,13 +70,13 @@
     justify-content: center;
     text-align: center;
     border-radius: 0.65rem;
-    border: 1.5px solid #c806f9;
+    border: 1.5px solid #0fff;
 }
 
 .tech-icon img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 6px 40px #c806f9;
+    box-shadow: 0 6px 40px #0fff;
 }
 
 .hero-img > div > img:hover,

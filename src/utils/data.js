@@ -11,7 +11,7 @@ export const SKILLS = [
     icon: fe,
     skills: [
       { skill: "HTML", percentage: "90%" },
-      { skill: "CSS", percentage: "70%" },
+      { skill: "Tailwind CSS", percentage: "70%" },
       { skill: "JavaScript", percentage: "65%" },
       { skill: "React.js", percentage: "60%" },
     ],
@@ -24,7 +24,8 @@ export const SKILLS = [
       { skill: "Node", percentage: "80%" },
       { skill: "Express", percentage: "65%" },
       { skill: "MongoDB", percentage: "60%" },
-      { skill: "SQL", percentage: "70%"},
+      { skill: "SQL", percentage: "70%" },
+      { skill: "Thunder Client", precentage: "60%" },
     ],
   },
   {
@@ -34,7 +35,8 @@ export const SKILLS = [
       { skill: "VisualStudio Code", percentage: "80%" },
       { skill: "GitHub", percentage: "90%" },
       { skill: "MongoDB Compass", percentage: "75%" },
-      { skill: "Postman", percentage: "60%" },
+      { skill: "Pycharm", percentage: "60%" },
+      { skill: "Colab", percentage: "65%" },
     ],
   },
   {
@@ -44,7 +46,7 @@ export const SKILLS = [
       { skill: "Leadership", percentage: "80%" },
       { skill: "Communication", percentage: "85%" },
       { skill: "Problem-Solving", percentage: "90%" },
-      { skill: "Teamwork", percentage: "75%"},
+      { skill: "Teamwork", percentage: "75%" },
       { skill: "Critical Thinking", percentage: "85%" },
       { skill: "Reasoning", percentage: "80%" },
     ],
@@ -74,20 +76,24 @@ export const SKILLS = [
 ];
 export const WORK_EXPERIENCE = [
   {
-    title: "DEVELOPER",
+    title: "FREE LANCER",
     date: "March 2024 - present",
-    responsibilities: ["Building Websites and Learning a lot of things"],
+    responsibilities: [
+      "Building Websites and AI models and Learning a lot of things",
+    ],
   },
   {
-    title: "B-TECH",
+    title: "B-TECH IN COMPUTER SCIENCE AND BUSINESS SYSTEMS",
     date: "October 2022 - present",
     responsibilities: [
       "Pursuing Btech in Computer Science and Business Systems",
     ],
   },
   {
-    title: "HSC",
+    title: "HIGHER SECONDARY ED",
     date: "June 2008 - May 2022",
-    responsibilities: ["Completed my Schooling at SBOA Matriculation Hr Sec School , Anna Nagar , Chennai"],
+    responsibilities: [
+      "Completed my Schooling at SBOA Matriculation Hr Sec School , Anna Nagar , Chennai",
+    ],
   },
 ];
