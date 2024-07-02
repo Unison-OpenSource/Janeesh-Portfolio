@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <div className="hero-content">
-        <h2>The Future Belongs To Those Who Believe In The Beauty Of Their Dreams</h2>
+        <h2>Under Maintenance</h2>
         <p>
           FullStack Developer | AI Enthusiast | Coder | Content Creator<br/>
         </p>
