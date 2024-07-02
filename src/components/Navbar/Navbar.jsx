@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   const openLink = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1gQ0TV9oWRbJV2_eYvNXwB8j1fO3H26O7/view?usp=drive_link";
+      "https://drive.google.com/file/d/1vji0j71bvfGj6-8DCcnIX9svwkS1IWte/view?usp=sharing";
   };
 
   return (
