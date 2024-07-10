@@ -19,7 +19,7 @@ const Quote = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       <h2>{quote}</h2>
     </div>
   );

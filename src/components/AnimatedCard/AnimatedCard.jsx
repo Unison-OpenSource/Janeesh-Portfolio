@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./AnimatedCard.css";
 import { motion } from "framer-motion";
 import cardsData from "./AnimatedCardsData.json";
 import pic from "/src/assets/LOGOS-main/Apple.png";
@@ -16,49 +15,60 @@ const AnimatedCard = () => {
 
   return (
     <>
-    <h1>Channels</h1>
-    <br/>
-    <h1></h1>
-    <div className="projects-container">
-      {cardsData.map((card, index) => (
-        <motion.div
-          key={index}
-          className={`project-card ${expandedCardIndex === index ? "expanded" : ""}`}
-          layout
-          onClick={() => {
-            setExpandedCardIndex(expandedCardIndex === index ? null : index);
-          }}
-        >
-          <motion.h3 layout="position">{card.title}</motion.h3>
+      <h1 className="text-3xl font-semibold mb-6">Channels</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {cardsData.map((card, index) => (
+          <motion.div
+            key={index}
+            className={`bg-blue-500 p-4 rounded-lg cursor-pointer relative overflow-hidden ${
+              expandedCardIndex === index ? "shadow-lg" : ""
+            }`}
+            layout
+            onClick={() => {
+              setExpandedCardIndex(expandedCardIndex === index ? null : index);
+            }}
+          >
+            <motion.h3
+              {...animated}
+              className="text-white text-lg font-semibold mb-2"
+            >
+              {card.title}
+            </motion.h3>
 
-          <motion.p layout="position">{card.content}</motion.p>
+            <motion.p {...animated} className="text-white mb-4">
+              {card.content}
+            </motion.p>
 
-          {expandedCardIndex === index && (
-            <>
-              <motion.img
-                {...animated}
-                src={card.image || pic}
-                alt="demo image"
-              />
+            {expandedCardIndex === index && (
+              <>
+                <motion.img
+                  {...animated}
+                  src={card.image || pic}
+                  alt="demo image"
+                  className="w-full h-48 object-cover rounded-lg mb-2"
+                />
 
-              <motion.p {...animated}>{card.additionalContent}</motion.p>
+                <motion.p {...animated} className="text-white mb-4">
+                  {card.additionalContent}
+                </motion.p>
 
-              <motion.div {...animated} className="btn-container">
-                <motion.a
-                  href={card.visitLink || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <motion.button>
-                    Visit
-                  </motion.button>
-                </motion.a>
-              </motion.div>
-            </>
-          )}
-        </motion.div>
-      ))}
-    </div>
+                <motion.div {...animated} className="flex justify-end">
+                  <motion.a
+                    href={card.visitLink || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <motion.button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700 transition duration-300">
+                      Visit
+                    </motion.button>
+                  </motion.a>
+                </motion.div>
+              </>
+            )}
+          </motion.div>
+        ))}
+      </div>
     </>
   );
 };
