@@ -3,7 +3,7 @@ import project from '../../utils/Projects.json';
 import './Projects.css'
 const Projects = () => {
   return (<>
-    <h1>Projects</h1><br/>
+    <h1 className="text-2xl font-semibold mb-8 md:mb-0">Projects</h1><br/>
     <div className="projects-container">
       {project.map((project, index) => (
         <div key={index} className="project-card">

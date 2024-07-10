@@ -9,7 +9,7 @@ import About from "./components/AboutMe/AboutMe";
 import Footer from "./components/Footer";
 import Ac from "./components/AnimatedCard/AnimatedCard";
 import Quote from "./components/quote/quote";
-import Map from "./Map";
+import Map from "./components/Map";
 
 const App = () => {
   return (
