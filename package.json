@@ -11,13 +11,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@react-google-maps/api": "^2.19.3",
     "axios": "^1.6.8",
     "emailjs": "^4.0.3",
     "framer-motion": "^11.0.28",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-jsx": "^1.0.0",
-    "react-router-dom": "^6.23.0",
+    "react-router-dom": "^6.24.1",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1"
   },
