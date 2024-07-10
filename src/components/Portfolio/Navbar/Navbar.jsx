@@ -79,16 +79,10 @@ const Navbar = () => {
             RESUME
           </button>
           <button
-            className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-blue-500 transition duration-300"
-            onClick={() => navigate("/design")}
-          >
-            Design
-          </button>
-          <button
-            className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-blue-500 transition duration-300"
+            className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-gray-500 transition duration-300"
             onClick={() => navigate("/blog")}
           >
-            Blog
+            My World
           </button>
         </div>
         <button
@@ -167,23 +161,15 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-blue-500 transition duration-300 w-full"
-                onClick={() => navigate("/design")}
-              >
-                Design
-              </button>
-            </li>
-            <li>
-              <button
-                className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-blue-500 transition duration-300 w-full"
+                className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-gray-500 transition duration-300 w-full"
                 onClick={() => navigate("/blog")}
               >
-                Blog
+                My World
               </button>
             </li>
             <li>
               <button
-                className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-blue-500 transition duration-300 w-full"
+                className="bg-gradient-to-r from-red-400 to-red-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-red-500 transition duration-300 w-full"
                 onClick={() => setMenuOpen(false)}
               >
                 Close
