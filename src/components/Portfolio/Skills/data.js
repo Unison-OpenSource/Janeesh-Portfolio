@@ -11,9 +11,10 @@ export const SKILLS = [
     icon: fe,
     skills: [
       { skill: "HTML", percentage: "90%" },
-      { skill: "Tailwind CSS", percentage: "70%" },
-      { skill: "JavaScript", percentage: "65%" },
-      { skill: "React.js", percentage: "60%" },
+      { skill: "CSS", percentage: "70%" },
+      { skill: "Tailwind CSS", percentage: "85%" },
+      { skill: "JavaScript", percentage: "70%" },
+      { skill: "React.js", percentage: "80%" },
     ],
   },
   {
@@ -21,11 +22,11 @@ export const SKILLS = [
     icon: be,
     skills: [
       { skill: "Python", percentage: "80%" },
-      { skill: "Node", percentage: "80%" },
+      { skill: "NodeJS", percentage: "80%" },
       { skill: "Express", percentage: "65%" },
       { skill: "MongoDB", percentage: "60%" },
       { skill: "SQL", percentage: "70%" },
-      { skill: "Thunder Client", precentage: "60%" },
+      { skill: "API", percentage: "60%" },
     ],
   },
   {
@@ -37,6 +38,7 @@ export const SKILLS = [
       { skill: "MongoDB Compass", percentage: "75%" },
       { skill: "Pycharm", percentage: "60%" },
       { skill: "Colab", percentage: "65%" },
+      { skill: "Jupyter", percentage: "60%" },
     ],
   },
   {
@@ -63,6 +65,23 @@ export const SKILLS = [
     ],
   },
   {
+    title: "Coding",
+    icon: fe,
+    skills: [
+      { skill: "Python", percentage: "80%" },
+      { skill: "C", percentage: "85%" },
+      { skill: "Java", percentage: "75%" },
+      { skill: "C++", percentage: "60%" },
+      { skill: "MySql", percentage: "65%" },
+      { skill: "JavaScript", percentage: "60%" },
+    ],
+  },
+  {
+    title: "AI",
+    icon: learn,
+    skills: [{ skill: "AI Prompt Engineering", percentage: "70%" }],
+  },
+  {
     title: "Other",
     icon: learn,
     skills: [
@@ -71,51 +90,6 @@ export const SKILLS = [
       { skill: "Time Management", percentage: "80%" },
       { skill: "Financial Literacy", percentage: "50%" },
       { skill: "Project Management", percentage: "70%" },
-    ],
-  },
-  {
-    title: "Other",
-    icon: learn,
-    skills: [
-      { skill: "Critical Thinking", percentage: "80%" },
-      { skill: "Spatial Awareness", percentage: "90%" },
-      { skill: "Time Management", percentage: "80%" },
-      { skill: "Financial Literacy", percentage: "50%" },
-      { skill: "Project Management", percentage: "70%" },
-    ],
-  },
-  {
-    title: "Other",
-    icon: learn,
-    skills: [
-      { skill: "Critical Thinking", percentage: "80%" },
-      { skill: "Spatial Awareness", percentage: "90%" },
-      { skill: "Time Management", percentage: "80%" },
-      { skill: "Financial Literacy", percentage: "50%" },
-      { skill: "Project Management", percentage: "70%" },
-    ],
-  },
-];
-export const WORK_EXPERIENCE = [
-  {
-    title: "FREE LANCER",
-    date: "March 2024 - present",
-    responsibilities: [
-      "Building Websites and AI models and Learning a lot of things",
-    ],
-  },
-  {
-    title: "B-TECH IN COMPUTER SCIENCE AND BUSINESS SYSTEMS",
-    date: "October 2022 - present",
-    responsibilities: [
-      "Pursuing Btech in Computer Science and Business Systems",
-    ],
-  },
-  {
-    title: "HIGHER SECONDARY ED",
-    date: "June 2008 - May 2022",
-    responsibilities: [
-      "Completed my Schooling at SBOA Matriculation Hr Sec School , Anna Nagar , Chennai",
     ],
   },
 ];

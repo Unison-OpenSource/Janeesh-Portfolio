@@ -15,12 +15,16 @@ const AnimatedCard = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-semibold mb-6">Channels</h1>
+      <div className="text-center font-bold">
+        <br></br>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl">Channel</h1>
+        <br></br>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {cardsData.map((card, index) => (
           <motion.div
             key={index}
-            className={`bg-blue-500 p-4 rounded-lg cursor-pointer relative overflow-hidden ${
+            className={`p-4 bg-violet-700 rounded-lg cursor-pointer relative overflow-hidden ${
               expandedCardIndex === index ? "shadow-lg" : ""
             }`}
             layout

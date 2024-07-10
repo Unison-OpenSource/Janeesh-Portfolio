@@ -12,7 +12,7 @@ const Skill = () => {
 
   return (
     <section className="skills-container flex flex-col items-center justify-center gap-8 min-h-screen px-4 py-8">
-      <div className="text-left font-bold">
+      <div className="text-center font-bold">
         <h1 className="text-2xl md:text-4xl lg:text-5xl">Proficiency</h1>
       </div>
 
