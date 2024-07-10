@@ -34,92 +34,55 @@ const AboutForm = (props) => {
       );
   };
 
-  const formStyle = {
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-  };
-
-  const labelStyle = {
-    fontSize: '1.2rem',
-    fontWeight: '500',
-    color: '#333',
-  };
-
-  const inputStyle = {
-    width: '100%',
-    fontSize: '1.2rem',
-    padding: '1rem',
-    borderRadius: '0.6rem',
-    outline: 'none',
-    border: '2px solid #e401fe',
-  };
-
-  const textAreaStyle = {
-    width: '100%',
-    fontSize: '1.2rem',
-    padding: '1rem',
-    borderRadius: '0.6rem',
-    outline: 'none',
-    border: '2px solid #e401fe',
-    minHeight: '150px',
-  };
-
-  const buttonStyle = {
-    fontSize: '1.3rem',
-    fontWeight: '500',
-    color: '#fff',
-    border: '1.5px solid #a892fe',
-    borderRadius: '0.6rem',
-    background: 'linear-gradient(90deg, #a892fe 0%, #8064e8 100%)',
-    padding: '0.7rem',
-    transition: 'all 0.3s ease',
-    cursor: 'pointer',
-  };
-
   return (
-    <div style={formStyle}>
-      <form ref={form} onSubmit={sendEmail}>
-        <label style={labelStyle}>Your Name</label>
+    <div className="w-full flex justify-center">
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col items-center gap-6 w-full max-w-lg">
+        <label className="text-xl font-medium text-gray-800">Your Name</label>
         <input
           type="text"
           name="from_name"
           placeholder="Enter your Name"
           required
-          style={inputStyle}
+          className="w-full text-xl p-4 rounded-md border-2 border-purple-600 outline-none"
         />
 
-        <label style={labelStyle}>Phone Number</label>
+        <label className="text-xl font-medium text-gray-800">Phone Number</label>
         <input
           type="tel"
           name="number"
           placeholder="Enter your phone number"
           required
-          style={inputStyle}
+          className="w-full text-xl p-4 rounded-md border-2 border-purple-600 outline-none"
         />
 
-        <label style={labelStyle}>Email</label>
+        <label className="text-xl font-medium text-gray-800">Email</label>
         <input
           type="email"
           name="user_email"
           placeholder="Enter your Mail"
           required
-          style={inputStyle}
+          className="w-full text-xl p-4 rounded-md border-2 border-purple-600 outline-none"
         />
 
-        <label style={labelStyle}>Company Name</label>
+        <label className="text-xl font-medium text-gray-800">Company Name</label>
         <input
           type="text"
           name="company_name"
           placeholder="Enter your College name"
           required
-          style={inputStyle}
+          className="w-full text-xl p-4 rounded-md border-2 border-purple-600 outline-none"
         />
 
-        <label style={labelStyle}>Message</label>
-        <textarea name="message" required style={textAreaStyle}></textarea>
+        <label className="text-xl font-medium text-gray-800">Message</label>
+        <textarea
+          name="message"
+          required
+          className="w-full text-xl p-4 rounded-md border-2 border-purple-600 outline-none h-40"
+        ></textarea>
 
-        <input type="submit" value="Send" style={buttonStyle} />
+        <button type="submit" className="text-xl font-medium text-white border-1.5 border-purple-400 rounded-md bg-gradient-to-r from-purple-400 to-purple-600 p-3 transition duration-300 ease-in-out hover:text-purple-400 hover:bg-transparent">
+          Send
+        </button>
       </form>
     </div>
   );
