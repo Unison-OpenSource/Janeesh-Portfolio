@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SKILLS } from "../../utils/data";
 import SkillCard from "./SkillCard/SkillCard";
-import SkillInfoCard from "./SkillInfoCard/SkillInfoCard";
+import SkillInfoCard from "./SkillCard/SkillInfoCard";
 
 const Skill = () => {
   const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
@@ -18,7 +18,7 @@ const Skill = () => {
 
       <div className="flex flex-wrap justify-center gap-4 md:justify-start">
         {SKILLS.map((item) => (
-          <div key={item.title} className="w-36 md:w-43 mb-4 md:mb-0">
+          <div key={item.title} className="w-40 md:w-43 mb-4 md:mb-0">
             <SkillCard
               iconUrl={item.icon}
               title={item.title}
