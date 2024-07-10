@@ -11,24 +11,25 @@ const Skill = () => {
   };
 
   return (
-    <section className="skills-container flex flex-col items-center justify-center gap-8">
-      <div className="text-center font-bold">
-        <h1>Proficiency</h1>
+    <section className="skills-container flex flex-col items-center justify-center gap-8 min-h-screen px-4 py-8">
+      <div className="text-left font-bold">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl">Proficiency</h1>
       </div>
 
-      <div className="flex overflow-x-auto md:overflow-x-visible items-center">
+      <div className="flex flex-wrap justify-center gap-4 md:justify-start">
         {SKILLS.map((item) => (
-          <SkillCard
-            key={item.title}
-            iconUrl={item.icon}
-            title={item.title}
-            isActive={selectedSkill.title === item.title}
-            onClick={() => handleSelectSkill(item)}
-          />
+          <div key={item.title} className="w-36 md:w-43 mb-4 md:mb-0">
+            <SkillCard
+              iconUrl={item.icon}
+              title={item.title}
+              isActive={selectedSkill.title === item.title}
+              onClick={() => handleSelectSkill(item)}
+            />
+          </div>
         ))}
       </div>
 
-      <div className="mt-8">
+      <div className="w-full max-w-screen-lg mx-auto mt-8">
         <SkillInfoCard
           heading={selectedSkill.title}
           skills={selectedSkill.skills}

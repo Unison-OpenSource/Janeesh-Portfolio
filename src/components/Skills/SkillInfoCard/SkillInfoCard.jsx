@@ -1,23 +1,30 @@
-import React from 'react'
-import "./SkillInfoCard.css";
-const SkillInfoCard = ({ heading, skills}) => {
-  return <div className='skills-info-card' >
-    <h6>{heading}</h6>
+import React from 'react';
 
-    <div className="skills-info-content">
+const SkillInfoCard = ({ heading, skills }) => {
+  return (
+    <div className='skills-info-card bg-white shadow-lg rounded-lg p-6'>
+      <h6 className='text-xl font-semibold py-2 bg-gradient-to-r from-purple-500 to-purple-800 text-transparent bg-clip-text border-b-2 border-purple-700 mb-6'>
+        {heading}
+      </h6>
+
+      <div className='skills-info-content'>
         {skills.map((item, index) => (
-            <React.Fragment key={`skill_${index}`}>
-                <div className="skill-info">
-                    <p>{item.skill}</p>
-                    <p className="percentage">{item.percentage}</p>
-                </div>
-                <div className="skill-progress-bg">
-                    <div className="skill-progress" style={{width:item.percentage}} />
-                </div>
-            </React.Fragment>
-        ))} 
+          <div key={`skill_${index}`} className='mb-4'>
+            <div className='flex justify-between mb-2'>
+              <p className='text-base font-semibold text-gray-700'>{item.skill}</p>
+              <p className='text-purple-600'>{item.percentage}</p>
+            </div>
+            <div className='w-full h-2 bg-gray-200 rounded-full'>
+              <div
+                className='h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full'
+                style={{ width: item.percentage }}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>;
+  );
 };
 
-export default SkillInfoCard
+export default SkillInfoCard;

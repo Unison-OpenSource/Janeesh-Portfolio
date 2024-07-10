@@ -17,7 +17,7 @@ const Hero = () => {
           </div>
 
           <div className="md:w-1/2 md:ml-6">
-            <div className="w-72 h-72 border-2 border-blue-100 flex items-center justify-center">
+            <div className="w-73 h-73 border-2 border-blue-100 flex items-center justify-center">
               <img
                 src={Profile}
                 className="w-full h-auto transform transition duration-300 hover:scale-110"
