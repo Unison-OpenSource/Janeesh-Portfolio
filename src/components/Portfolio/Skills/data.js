@@ -1,9 +1,9 @@
-import fe from "../../src/utils/frontend.png";
-import be from "../../src/utils/backend.png";
-import lang from "../../src/utils/languages.png";
-import learn from "../../src/utils/learning.gif";
-import soft from "../../src/utils/soft.png";
-import tools from "../../src/utils/tools.png";
+import fe from "./frontend.png";
+import be from "./backend.png";
+import lang from "./languages.png";
+import learn from "./learning.gif";
+import soft from "./soft.png";
+import tools from "./tools.png";
 
 export const SKILLS = [
   {

@@ -1,4 +1,4 @@
-import React from "react";  
+import React from "react";
 import Profile from "./me.jpg"; // Import your CSS file for Hero component styling
 
 const Hero = () => {
