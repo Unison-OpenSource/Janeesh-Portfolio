@@ -73,6 +73,28 @@ export const SKILLS = [
       { skill: "Project Management", percentage: "70%" },
     ],
   },
+  {
+    title: "Other",
+    icon: learn,
+    skills: [
+      { skill: "Critical Thinking", percentage: "80%" },
+      { skill: "Spatial Awareness", percentage: "90%" },
+      { skill: "Time Management", percentage: "80%" },
+      { skill: "Financial Literacy", percentage: "50%" },
+      { skill: "Project Management", percentage: "70%" },
+    ],
+  },
+  {
+    title: "Other",
+    icon: learn,
+    skills: [
+      { skill: "Critical Thinking", percentage: "80%" },
+      { skill: "Spatial Awareness", percentage: "90%" },
+      { skill: "Time Management", percentage: "80%" },
+      { skill: "Financial Literacy", percentage: "50%" },
+      { skill: "Project Management", percentage: "70%" },
+    ],
+  },
 ];
 export const WORK_EXPERIENCE = [
   {

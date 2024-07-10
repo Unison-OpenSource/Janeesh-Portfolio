@@ -16,9 +16,12 @@ const Skill = () => {
         <h1 className="text-2xl md:text-4xl lg:text-5xl">Proficiency</h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 md:justify-start">
+      <div className="flex flex-wrap justify-center gap-4">
         {SKILLS.map((item) => (
-          <div key={item.title} className="w-40 md:w-43 mb-4 md:mb-0">
+          <div
+            key={item.title}
+            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4"
+          >
             <SkillCard
               iconUrl={item.icon}
               title={item.title}
