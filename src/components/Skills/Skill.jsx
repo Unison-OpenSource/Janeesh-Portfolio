@@ -11,9 +11,12 @@ const Skill = () => {
   };
 
   return (
-    <section className="skills-container flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0 md:items-start">
+    <section className="skills-container flex flex-col items-center justify-center gap-8">
+      <div className="text-center font-bold">
+        <h1>Proficiency</h1>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:flex-1">
+      <div className="flex overflow-x-auto md:overflow-x-visible items-center">
         {SKILLS.map((item) => (
           <SkillCard
             key={item.title}
@@ -25,13 +28,11 @@ const Skill = () => {
         ))}
       </div>
 
-      <div className="md:ml-8 md:flex-1">
-        <div className="md:mt-8">
-          <SkillInfoCard
-            heading={selectedSkill.title}
-            skills={selectedSkill.skills}
-          />
-        </div>
+      <div className="mt-8">
+        <SkillInfoCard
+          heading={selectedSkill.title}
+          skills={selectedSkill.skills}
+        />
       </div>
     </section>
   );
