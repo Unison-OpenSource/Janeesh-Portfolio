@@ -8,7 +8,6 @@ import Design from "./pages/Design"; // Adjust the path as per your file structu
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/design" element={<Design />} />
