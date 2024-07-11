@@ -23,13 +23,13 @@ const Navbar = () => {
     <nav className="bg-opacity-25 bg-black backdrop-blur-lg sticky top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         <div className="flex items-center">
-          <img className="h-9" src={logo} alt="JANEESH P" />
+          <img className="h-10" src={logo} alt="JANEESH P" />
         </div>
         <div className="hidden md:flex space-x-6">
           <ul className="flex space-x-4">
             <li>
               <a
-                className="text-white text-xl p-2 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
                 onClick={() => scrollToSection("home")}
               >
                 Home
@@ -37,7 +37,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="text-white text-xl p-2 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
                 onClick={() => scrollToSection("skills")}
               >
                 Skills
@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="text-white text-xl p-2 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
                 onClick={() => scrollToSection("projects")}
               >
                 Projects
@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="text-white text-xl p-2 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
                 onClick={() => scrollToSection("ac")}
               >
                 Channel
@@ -61,7 +61,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="text-white text-xl p-2 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
                 onClick={() => scrollToSection("contact")}
               >
                 Contact
