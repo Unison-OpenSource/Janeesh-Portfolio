@@ -1,15 +1,15 @@
 [
     {
         "title":"Personal Website",
-        "imagesrc":"/src/components/Portfolio/Hero/me.jpg",
+        "imagesrc":"",
         "description":"This is a project made to showcase my Skills",
-        "skills": ["React","MongoDB"],
+        "skills": ["React","Tailwind","Creativity"],
         "demo": "janeesh.me"
     },
     {
         "title":"Heros Mart",
         "imagesrc":"",
-        "description":"MERN Stack Web ",
+        "description":"MERN Stack Web Development ",
         "skills": ["React","MongoDB","Bootstrap","Express","NodeJs"],
         "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7208858201558011905/"
     },
@@ -28,24 +28,24 @@
         "demo": "https://www.linkedin.com/posts/janeesh-p-880963250_educationtechnology-collaborativelearning-activity-7165291231269281792-OilC?utm_source=share&utm_medium=member_desktop"
     },
     {
-        "title":"Certificate Generator",
+        "title":"CertiGen",
         "imagesrc": "",
-        "description":"A Private project",
-        "skills": ["Financial","Management"],
+        "description":"Generate Certificates easily",
+        "skills": ["Python","Management"],
         "demo": ""
     },
     {
         "title":"Creative Projects",
         "imagesrc": "",
-        "description":"A Private project",
-        "skills": ["Financial","Management"],
+        "description":"Funny and Lovely",
+        "skills": ["HTML","CSS","React"],
         "demo": "https://youtu.be/dQOu2mpZxm4?feature=shared"
     },
     {
-        "title":"Company Website",
+        "title":"WebDev Intern",
         "imagesrc": "",
-        "description":"A Private project",
-        "skills": ["Financial","Management"],
+        "description":"Developed a website for a company",
+        "skills": ["ReactJs","Django","SQL"],
         "demo": "https://www.pavinfradevelopers.com/"
     }
 ]

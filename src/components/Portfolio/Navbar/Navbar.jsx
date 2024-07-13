@@ -65,11 +65,11 @@ const Navbar = () => {
             className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-black transition duration-300"
             onClick={() => navigate("/blog")}
           >
-            My World
+            Blog
           </button>
           <button
             className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-black transition duration-300"
-            onClick={() => navigate("/blog")}
+            onClick={() => navigate("/design")}
           >
             My World
           </button>
@@ -142,13 +142,13 @@ const Navbar = () => {
                 className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-gray-500 transition duration-300 w-full"
                 onClick={() => navigate("/blog")}
               >
-                My World
+                Blog
               </button>
             </li>
             <li>
               <button
                 className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-gray-500 transition duration-300 w-full"
-                onClick={() => navigate("/blog")}
+                onClick={() => navigate("/design")}
               >
                 My World
               </button>
