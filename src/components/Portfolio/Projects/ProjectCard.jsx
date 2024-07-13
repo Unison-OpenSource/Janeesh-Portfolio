@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ProjectCard = ({ project, id }) => {
   const { title, imagesrc, description, skills, demo, source } = project;
@@ -6,7 +6,7 @@ const ProjectCard = ({ project, id }) => {
   return (
     <div key={id}>
       <img src={imagesrc} alt={`image of ${title}`} />
-      <h3>{title}</h3>
+      <h1>{title}</h1>
       <p>{description}</p>
       <ul>
         {/* Use skills.map to render each skill as an li element */}
