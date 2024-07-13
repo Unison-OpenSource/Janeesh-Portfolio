@@ -9,7 +9,7 @@
     },
     {
         "title":"Heros Mart",
-        "imagesrc":"/src/components/Portfolio/Projects/spid.jpg",
+        "imagesrc":"",
         "description":"MERN Stack Web ",
         "skills": ["React","MongoDB","Bootstrap","Express","NodeJs"],
         "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7208858201558011905/",
@@ -17,7 +17,7 @@
     },
     {
         "title":"QR Code Generator",
-        "imagesrc":"https://tse3.mm.bing.net/th/id/OIG1.eyTrWjhPFdRWHIViCt8y?pid=ImgGn",
+        "imagesrc":"",
         "description":"This is a project made to make  QR codes for any text.",
         "skills": ["Javascript","HTML","CSS"],
         "demo": "https://github.com/janeeshgithub/Quick-Response-code-Generator",
@@ -25,7 +25,7 @@
     },
     {
         "title":"E-Learning Platform",
-        "imagesrc":"https://tse1.mm.bing.net/th/id/OIG3.5IUf9MqjcZ7pnJuBiqdg?pid=ImgGn",
+        "imagesrc":"",
         "description":"A platform to make Ed-Life easier",
         "skills": ["Creativity","AI","React"],
         "demo": "https://www.linkedin.com/posts/janeesh-p-880963250_educationtechnology-collaborativelearning-activity-7165291231269281792-OilC?utm_source=share&utm_medium=member_desktop",
