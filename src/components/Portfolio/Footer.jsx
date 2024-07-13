@@ -1,12 +1,13 @@
 function Footer() {
   return (
     <>
-      <div className="text-center text-xs p-4 bg-blue">
+    
+      <div className="text-center text-xl p-4">
         ❤❤ Janeesh P ❤❤
         <br />
-        THANKS FOR VISITING
+        Let's Connect
         <br />
-        Love you Guys
+        Let's Grow
       </div>
     </>
   );

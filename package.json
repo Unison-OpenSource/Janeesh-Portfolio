@@ -14,13 +14,18 @@
     "@react-google-maps/api": "^2.19.3",
     "axios": "^1.6.8",
     "emailjs": "^4.0.3",
-    "framer-motion": "^11.0.28",
+    "framer-motion": "^11.3.1",
+    "leaflet": "^1.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-jsx": "^1.0.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.24.1",
+    "react-tsparticles": "^2.12.2",
     "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.11",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
     "@swc/cli": "^0.3.12",

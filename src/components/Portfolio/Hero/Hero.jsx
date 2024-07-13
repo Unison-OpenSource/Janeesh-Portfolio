@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="md:flex md:items-center md:justify-between">
           <div className="md:w-1/2">
             <h2 className="text-4xl font-semibold text-white mb-4">
-              Building Something that is Irreplaceable
+              
             </h2>
             <p className="text-lg text-white mb-8">
               FullStack Developer | AI Enthusiast | Coder | Content Creator
