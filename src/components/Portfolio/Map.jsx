@@ -10,7 +10,6 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
 // Import default Leaflet icon
-import "leaflet/dist/leaflet.css";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -24,12 +23,10 @@ const DefaultIcon = L.icon({
 });
 
 const Navbar = () => (
-  <div className="text-center font-bold">
-    <br />
-    <h1 className="text-2xl md:text-4xl lg:text-5xl">
+  <div className="text-center font-bold mb-4">
+    <h1 className="text-xl md:text-2xl lg:text-3xl">
       Open to Work in these Locations
     </h1>
-    <br />
   </div>
 );
 
@@ -82,11 +79,11 @@ const Map = () => {
   return (
     <div className="flex flex-col h-screen">
       <Navbar />
-      <div className="flex items-center justify-center flex-grow relative z-0">
+      <div className="flex items-center justify-center flex-grow relative z-0 p-4">
         <MapContainer
           center={[20, 0]}
           zoom={2}
-          style={{ height: "80vh", width: "80vw", zIndex: 0 }}
+          style={{ height: "60vh", width: "100%" }} // Adjusted for smaller screens
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
