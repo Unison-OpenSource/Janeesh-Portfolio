@@ -17,13 +17,31 @@ const AboutMe = () => {
 
       <div className="flex flex-wrap justify-center mb-8">
         <div className="w-full md:w-1/3 mb-4 md:mb-0">
-          <Aboutmeinfocard iconUrl={Instagram} text="janeeshp_" />
+          <a
+            href="https://www.instagram.com/janeeshp_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Aboutmeinfocard iconUrl={Instagram} text="janeeshp_" />
+          </a>
         </div>
         <div className="w-full md:w-1/3 mb-4 md:mb-0">
-          <Aboutmeinfocard iconUrl={github} text="janeeshgithub" />
+          <a
+            href="https://www.linkedin.com/in/janeesh-p-880963250/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Aboutmeinfocard iconUrl={github} text="janeeshgithub" />
+          </a>
         </div>
         <div className="w-full md:w-1/3 mb-4 md:mb-0">
-          <Aboutmeinfocard iconUrl={linkedin} text="Janeesh P" />
+          <a
+            href="https://www.linkedin.com/in/janeeshp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Aboutmeinfocard iconUrl={linkedin} text="Janeesh P" />
+          </a>
         </div>
       </div>
       <div className="text-center font-bold">
