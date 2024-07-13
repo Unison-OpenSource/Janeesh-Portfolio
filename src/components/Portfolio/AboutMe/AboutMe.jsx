@@ -65,7 +65,7 @@ const AboutMe = () => {
           </a>
         </div>
         <div className="w-full md:w-1/3 mb-4 md:mb-0">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/janeesh-p-880963250/" target="_blank" rel="noopener noreferrer">
             <Aboutmeinfocard iconUrl={linkedin} text="Janeesh P" />
           </a>
         </div>
