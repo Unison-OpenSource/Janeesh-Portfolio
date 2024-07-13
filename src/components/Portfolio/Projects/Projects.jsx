@@ -1,4 +1,3 @@
-import React from "react";
 import project from "./Projects.json";
 import spidey from "./spid.jpg";
 

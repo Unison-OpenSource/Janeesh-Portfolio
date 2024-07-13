@@ -10,14 +10,17 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false); // Close the menu after clicking on a section link
+      setMenuOpen(false);
     }
   };
 
   const openLink = (url) => {
     window.open(url, "_blank");
-    setMenuOpen(false); // Close the menu after clicking on a link
+    setMenuOpen(false);
   };
+
+  const buttonClasses =
+    "cursor-pointer text-white font-bold relative text-[16px] w-[7em] h-[2.5em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[15px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700";
 
   return (
     <nav className="bg-opacity-25 bg-black backdrop-blur-lg sticky top-0 z-30">
@@ -51,7 +54,6 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
-
             <li>
               <a
                 className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
@@ -61,20 +63,14 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <button
-            className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-black transition duration-300"
-            onClick={() => navigate("/blog")}
-          >
+          <button className={buttonClasses} onClick={() => navigate("/blog")}>
             Blog
           </button>
-          <button
-            className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-black transition duration-300"
-            onClick={() => navigate("/design")}
-          >
+          <button className={buttonClasses} onClick={() => navigate("/design")}>
             My World
           </button>
           <button
-            className=" bg-gradient-to-r  from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-black transition duration-300"
+            className={buttonClasses}
             onClick={() =>
               openLink(
                 "https://drive.google.com/file/d/1vji0j71bvfGj6-8DCcnIX9svwkS1IWte/view?usp=sharing"
@@ -99,9 +95,7 @@ const Navbar = () => {
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                onClick={() => {
-                  scrollToSection("home");
-                }}
+                onClick={() => scrollToSection("home")}
               >
                 Home
               </a>
@@ -109,9 +103,7 @@ const Navbar = () => {
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                onClick={() => {
-                  scrollToSection("skills");
-                }}
+                onClick={() => scrollToSection("skills")}
               >
                 Skills
               </a>
@@ -119,27 +111,22 @@ const Navbar = () => {
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                onClick={() => {
-                  scrollToSection("projects");
-                }}
+                onClick={() => scrollToSection("projects")}
               >
                 Projects
               </a>
             </li>
-
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                onClick={() => {
-                  scrollToSection("contact");
-                }}
+                onClick={() => scrollToSection("contact")}
               >
                 Contact
               </a>
             </li>
             <li>
               <button
-                className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-gray-500 transition duration-300 w-full"
+                className={buttonClasses}
                 onClick={() => navigate("/blog")}
               >
                 Blog
@@ -147,7 +134,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                className="bg-gradient-to-r from-gray-400 to-gray-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-gray-500 transition duration-300 w-full"
+                className={buttonClasses}
                 onClick={() => navigate("/design")}
               >
                 My World
@@ -155,7 +142,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-blue-500 transition duration-300 w-full"
+                className={buttonClasses}
                 onClick={() =>
                   openLink(
                     "https://drive.google.com/file/d/1vji0j71bvfGj6-8DCcnIX9svwkS1IWte/view?usp=sharing"
