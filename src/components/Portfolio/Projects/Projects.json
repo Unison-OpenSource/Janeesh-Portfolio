@@ -12,8 +12,8 @@
         "imagesrc":"/src/components/Portfolio/Projects/spid.jpg",
         "description":"MERN Stack Web ",
         "skills": ["React","MongoDB","Bootstrap","Express","NodeJs"],
-        "demo": "",
-        "source": ""
+        "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7208858201558011905/",
+        "source": "https://www.linkedin.com/feed/update/urn:li:activity:7208858201558011905/"
     },
     {
         "title":"QR Code Generator",
@@ -36,8 +36,8 @@
         "imagesrc": "",
         "description":"A Private project",
         "skills": ["Financial","Management"],
-        "demo": "https://www.instagram.com/skillrackjp",
-        "source": "https://www.instagram.com/iamneormk/"
+        "demo": "",
+        "source": ""
     },
     {
         "title":"Creative Projects",

@@ -4,7 +4,6 @@ import Skill from "../components/Portfolio/Skills/Skill";
 import Projects from "../components/Portfolio/Projects/Projects";
 import About from "../components/Portfolio/AboutMe/AboutMe";
 import Footer from "../components/Portfolio/Footer";
-import Ac from "../components/Portfolio/AnimatedCard/AnimatedCard";
 import Map from "../components/Portfolio/Map";
 
 const Home = () => {
@@ -20,9 +19,6 @@ const Home = () => {
         </div>
         <div id="projects">
           <Projects />
-        </div>
-        <div id="ac">
-          <Ac />
         </div>
         <div id="contact">
           <About />

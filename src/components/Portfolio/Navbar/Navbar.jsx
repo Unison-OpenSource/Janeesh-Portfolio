@@ -51,14 +51,7 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
-            <li>
-              <a
-                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                onClick={() => scrollToSection("ac")}
-              >
-                Channel
-              </a>
-            </li>
+
             <li>
               <a
                 className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
@@ -127,16 +120,7 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
-            <li>
-              <a
-                className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                onClick={() => {
-                  scrollToSection("ac");
-                }}
-              >
-                Channel
-              </a>
-            </li>
+
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
