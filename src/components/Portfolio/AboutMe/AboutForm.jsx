@@ -65,7 +65,7 @@ const AboutForm = (props) => {
         onSubmit={sendEmail}
         className="flex flex-col items-center gap-6 w-full max-w-lg"
       >
-        <label className="text-xl font-medium text-gray-800">Your Name</label>
+        <label className="text-xl font-medium text-gray-200">Your Name</label>
         <input
           type="text"
           name="from_name"
@@ -73,11 +73,11 @@ const AboutForm = (props) => {
           value={inputs.from_name}
           onChange={handleChange}
           required
-          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-gray-800"
+          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-slate-950"
           style={{ borderColor: "#ADD8E6" }} // Change border color to light blue
         />
 
-        <label className="text-xl font-medium text-gray-800">
+        <label className="text-xl font-medium text-gray-200">
           Phone Number
         </label>
         <input
@@ -87,11 +87,11 @@ const AboutForm = (props) => {
           value={inputs.number}
           onChange={handleChange}
           required
-          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-gray-800"
+          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-slate-950"
           style={{ borderColor: "#ADD8E6" }} // Change border color to light blue
         />
 
-        <label className="text-xl font-medium text-gray-800">Email</label>
+        <label className="text-xl font-medium text-gray-200">Email</label>
         <input
           type="email"
           name="user_email"
@@ -99,11 +99,11 @@ const AboutForm = (props) => {
           value={inputs.user_email}
           onChange={handleChange}
           required
-          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-gray-800"
+          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-slate-950"
           style={{ borderColor: "#ADD8E6" }} // Change border color to light blue
         />
 
-        <label className="text-xl font-medium text-gray-800">
+        <label className="text-xl font-medium text-gray-200">
           Company Name
         </label>
         <input
@@ -113,17 +113,17 @@ const AboutForm = (props) => {
           value={inputs.company_name}
           onChange={handleChange}
           required
-          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-gray-800"
+          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none bg-white text-slate-950"
           style={{ borderColor: "#ADD8E6" }} // Change border color to light blue
         />
 
-        <label className="text-xl font-medium text-gray-800">Message</label>
+        <label className="text-xl font-medium text-gray-200">Message</label>
         <textarea
           name="message"
           value={inputs.message}
           onChange={handleChange}
           required
-          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none h-40 bg-white text-gray-800"
+          className="w-full text-xl p-4 rounded-md border-2 border-lightblue-400 outline-none h-40 bg-white text-slate-950"
           style={{ borderColor: "#ADD8E6" }} // Change border color to light blue
         ></textarea>
 

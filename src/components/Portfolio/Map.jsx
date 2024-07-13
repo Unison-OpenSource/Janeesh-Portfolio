@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -7,15 +7,30 @@ import {
   useMapEvent,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+// Import default Leaflet icon
+import "leaflet/dist/leaflet.css";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+// Set default marker icon
+const DefaultIcon = L.icon({
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+  iconSize: [25, 41], // size of the icon
+  iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+  shadowSize: [41, 41], // size of the shadow
+});
 
 const Navbar = () => (
   <div className="text-center font-bold">
-  <br></br>
-  <h1 className="text-2xl md:text-4xl lg:text-5xl">
-    Open to Work in these Locations
-  </h1>
-  <br></br>
-</div>
+    <br />
+    <h1 className="text-2xl md:text-4xl lg:text-5xl">
+      Open to Work in these Locations
+    </h1>
+    <br />
+  </div>
 );
 
 const Map = () => {
@@ -54,6 +69,16 @@ const Map = () => {
     return null;
   };
 
+  useEffect(() => {
+    // Set the default icon for all markers
+    delete L.Icon.Default.prototype._getIconUrl;
+    L.Icon.Default.mergeOptions({
+      iconRetinaUrl: markerIcon,
+      iconUrl: markerIcon,
+      shadowUrl: markerShadow,
+    });
+  }, []);
+
   return (
     <div className="flex flex-col h-screen">
       <Navbar />
@@ -68,7 +93,7 @@ const Map = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
           {places.map((place, index) => (
-            <Marker key={index} position={place.position}>
+            <Marker key={index} position={place.position} icon={DefaultIcon}>
               <Popup>
                 <b>{place.popup}</b>
               </Popup>

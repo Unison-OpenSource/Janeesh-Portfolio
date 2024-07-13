@@ -12,7 +12,7 @@ const SkillInfoCard = ({ heading, skills }) => {
           <div key={`skill_${index}`} className='mb-4'>
             <div className='flex justify-between mb-2'>
               <p className='text-base font-semibold text-gray-700'>{item.skill}</p>
-              <p className='text-purple-600'>{item.percentage}</p>
+              {/* <p className='text-purple-600'>{item.percentage}</p> */} 
             </div>
             <div className='w-full h-2 bg-gray-200 rounded-full'>
               <div
