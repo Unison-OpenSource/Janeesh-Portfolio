@@ -4,7 +4,6 @@ const Aboutmeinfocard = ({ iconUrl, text }) => {
       <div className="w-16 h-16 bg-purple-700 flex items-center justify-center rounded-md mb-4">
         <img src={iconUrl} className="w-8 h-auto" alt={text} />
       </div>
-      <p className="text-xl">{text}</p>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import YouTubeCard from "../components/Blog/Vid/YT";
 const Blog = () => {
   return (
     <>
+    
       <YouTubeCard></YouTubeCard>
     </>
   );

@@ -5,7 +5,7 @@ import Projects from "../components/Portfolio/Projects/Projects";
 import About from "../components/Portfolio/AboutMe/AboutMe";
 import Footer from "../components/Portfolio/Footer";
 import Map from "../components/Portfolio/Map";
-
+import Quote from "../components/Portfolio/Quote";
 const Home = () => {
   return (
     <>
@@ -22,6 +22,9 @@ const Home = () => {
         </div>
         <div id="contact">
           <About />
+        </div>
+        <div>
+          <Quote />
         </div>
         <div>
           <Map />
