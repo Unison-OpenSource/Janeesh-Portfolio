@@ -23,19 +23,15 @@ const Skill = () => {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {SKILLS.map((item) => (
-          <div
+          <SkillCard
             key={item.title}
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4"
-          >
-            <SkillCard
-              iconUrl={item.icon}
-              title={item.title}
-              isActive={selectedSkill.title === item.title}
-              onClick={() => handleSelectSkill(item)}
-            />
-          </div>
+            iconUrl={item.icon}
+            title={item.title}
+            isActive={selectedSkill.title === item.title}
+            onClick={() => handleSelectSkill(item)}
+          />
         ))}
       </div>
     </section>

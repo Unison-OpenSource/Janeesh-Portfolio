@@ -53,17 +53,7 @@ export const SKILLS = [
       { skill: "Reasoning", percentage: "80%" },
     ],
   },
-  {
-    title: "Languages Spoken",
-    icon: lang,
-    skills: [
-      { skill: "English", percentage: "80%" },
-      { skill: "Tamil", percentage: "90%" },
-      { skill: "Telugu", percentage: "80%" },
-      { skill: "Hindi", percentage: "50%" },
-      { skill: "German", percentage: "20%" },
-    ],
-  },
+
   {
     title: "Coding",
     icon: fe,
@@ -74,6 +64,17 @@ export const SKILLS = [
       { skill: "C++", percentage: "60%" },
       { skill: "MySql", percentage: "65%" },
       { skill: "JavaScript", percentage: "60%" },
+    ],
+  },
+  {
+    title: "Languages Spoken",
+    icon: lang,
+    skills: [
+      { skill: "English", percentage: "80%" },
+      { skill: "Tamil", percentage: "90%" },
+      { skill: "Telugu", percentage: "80%" },
+      { skill: "Hindi", percentage: "50%" },
+      { skill: "German", percentage: "20%" },
     ],
   },
   {
