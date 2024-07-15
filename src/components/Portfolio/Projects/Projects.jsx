@@ -6,7 +6,7 @@ const Projects = () => {
     <>
       <div className="text-center font-bold">
         <h1 className="text-2xl md:text-4xl lg:text-5xl">Projects</h1>
-        <br></br>
+        <br />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {project.map((project, index) => (

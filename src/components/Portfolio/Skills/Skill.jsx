@@ -16,14 +16,14 @@ const Skill = () => {
         <h1 className="text-2xl md:text-4xl lg:text-5xl">Proficiency</h1>
       </div>
 
-      <div className="w-full max-w-screen-lg mx-auto mt-8">
+      <div className="flex justify-center w-full mt-8">
         <SkillInfoCard
           heading={selectedSkill.title}
           skills={selectedSkill.skills}
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-6">
         {SKILLS.map((item) => (
           <div
             key={item.title}
