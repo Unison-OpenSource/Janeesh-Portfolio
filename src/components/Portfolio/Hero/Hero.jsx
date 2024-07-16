@@ -1,4 +1,5 @@
 import React from "react";
+import { Typewriter } from 'react-simple-typewriter';
 import Profile from "./me.jpg"; // Import your CSS file for Hero component styling
 
 const Hero = () => {
@@ -12,8 +13,15 @@ const Hero = () => {
               The Best Project You’ll Ever Work On Is You
             </h2>
             <p className="text-lg text-white mb-8">
-              FullStack Developer | AI Enthusiast | Coder | Content Creator |
-              Top Voice | Fitness Lover | .....
+              <Typewriter
+                words={['FullStack Developer', 'AI Enthusiast', 'Coder', 'Content Creator', 'Top Voice', 'Fitness Lover', '.....']}
+                loop={Infinity}
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </p>
           </div>
 
