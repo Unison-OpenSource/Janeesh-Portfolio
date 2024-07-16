@@ -1,5 +1,5 @@
 import React from "react";
-import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter } from "react-simple-typewriter";
 import Profile from "./me.jpg"; // Import your CSS file for Hero component styling
 
 const Hero = () => {
@@ -9,20 +9,36 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="md:flex md:items-center md:justify-between">
           <div className="md:w-1/2">
-            <h2 className="text-4xl font-semibold text-white mb-4">
-              The Best Project You’ll Ever Work On Is You
-            </h2>
-            <p className="text-lg text-white mb-8">
+            <h1 className="text-4xl font-semibold text-white mb-4">
               <Typewriter
-                words={['FullStack Developer', 'AI Enthusiast', 'Coder', 'Content Creator', 'Top Voice', 'Fitness Lover', '.....']}
-                loop={Infinity}
+                words={[" The Best Project You’ll Ever Work On Is You"]}
+                loop={1}
                 cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={60}
                 delaySpeed={1000}
               />
-            </p>
+            </h1>
+
+            <h1 className="text-2xl text-white mb-8">
+              <Typewriter
+                words={[
+                  "FullStack Developer",
+                  "Coder",
+                  "Content Creator",
+                  "Top Voice",
+                  "AI Enthusiast",
+                  "Fitness Lover",
+                ]}
+                loop={Infinity}
+                cursor
+                cursorStyle="_"
+                typeSpeed={80}
+                deleteSpeed={60}
+                delaySpeed={900}
+              />
+            </h1>
           </div>
 
           <div className="md:w-1/2 md:ml-6 flex justify-center">
