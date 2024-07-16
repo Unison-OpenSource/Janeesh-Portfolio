@@ -1,5 +1,4 @@
 import { Typewriter } from "react-simple-typewriter";
-import sp from "./sp.png";
 
 const Homeblog = () => {
   return (
@@ -15,11 +14,6 @@ const Homeblog = () => {
           delaySpeed={1000}
         />
       </h1>
-      <img
-        src={sp}// Replace with your image URL
-        alt="Blog Image"
-        className="w-100 h-100 object-cover rounded-md"
-      />
     </div>
   );
 };
