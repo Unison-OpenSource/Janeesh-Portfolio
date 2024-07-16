@@ -1,9 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-const Blog = () => {
+const Ja = () => {
   return (
-    <div className="flex justify-center py-10">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <iframe
         src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218497366377529344"
         height="912"
@@ -17,4 +16,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Ja;

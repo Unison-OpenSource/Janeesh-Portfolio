@@ -6,6 +6,7 @@ import About from "../components/Portfolio/AboutMe/AboutMe";
 import Footer from "../components/Portfolio/Footer";
 import Map from "../components/Portfolio/Map";
 import Quote from "../components/Portfolio/Quote";
+import Ja from "../components/Portfolio/Ja";
 const Home = () => {
   return (
     <>
@@ -28,6 +29,9 @@ const Home = () => {
         </div>
         <div>
           <Map />
+        </div>
+        <div>
+          <Ja />
         </div>
         <Footer />
       </div>
