@@ -17,7 +17,7 @@ const Blog = () => {
       title: "Building Responsive Web Apps",
       description: "Best practices for responsive design.",
       iframeSrc:
-        "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218497366377529344",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7125553718023913472",
     },
     {
       id: 3,
