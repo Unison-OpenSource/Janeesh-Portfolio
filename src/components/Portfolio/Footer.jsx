@@ -21,8 +21,8 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center p-4 ">
-      <div className="flex flex-col items-center mb-6">
-        <h2 className="text-lg font-semibold mb-4">{quote}</h2>
+      <div className="flex flex-col items-center mb-1">
+        <h2 className="text-lg font-semibold mb-3">{quote}</h2>
         <button
           onClick={fetchQuote}
           className="relative border hover:border-purple-600 duration-500 group cursor-pointer text-purple-50 overflow-hidden h-14 w-56 rounded-md bg-purple-800 p-2 flex justify-center items-center font-extrabold"

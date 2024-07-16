@@ -23,9 +23,9 @@ const Home = () => {
           <About />
         </div>
         <div>
+        <Footer />
           <Map />
         </div>
-        <Footer />
       </div>
     </>
   );
