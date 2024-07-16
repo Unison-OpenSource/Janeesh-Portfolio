@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logobl.png";
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Button text="Home" onClick={() => navigate("/")} />
+          <Button text="Coming!" onClick={() => navigate("/soon")} />
           <Button text="My World" onClick={() => navigate("/design")} />
         </div>
         <button
@@ -62,6 +62,9 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <Button text="Coming!" onClick={() => navigate("/soon")} />
+            </li>
             <li>
               <Button text="My World" onClick={() => navigate("/design")} />
             </li>
