@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logobl.png";
 
-const Navbar = () => {
+const Navb = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  // Create refs for each section
+  const homeRef = useRef(null);
+  const categoriesRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
       setMenuOpen(false);
     }
   };
@@ -26,18 +31,40 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex space-x-6">
           <ul className="flex space-x-4">
-            {["home", "skills", "projects", "contact"].map((section) => (
-              <li key={section}>
-                <a
-                  className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                  onClick={() => scrollToSection(section)}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </a>
-              </li>
-            ))}
+            <li>
+              <a
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-500"
+                onClick={() => scrollToSection(homeRef)}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
+                onClick={() => scrollToSection(categoriesRef)}
+              >
+                Categories
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
+                onClick={() => scrollToSection(aboutRef)}
+              >
+                Posts
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
+                onClick={() => scrollToSection(contactRef)}
+              >
+                Hacks
+              </a>
+            </li>
           </ul>
-          <Button text="Coming!" onClick={() => navigate("/soon")} />
+          <Button text="New" onClick={() => navigate("/soon")} />
           <Button text="My World" onClick={() => navigate("/design")} />
         </div>
         <button
@@ -52,18 +79,40 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-opacity-25 bg-black backdrop-blur-lg absolute top-0 left-0 w-full py-4">
           <ul className="flex flex-col items-center space-y-4">
-            {["home", "skills", "projects", "contact"].map((section) => (
-              <li key={section}>
-                <a
-                  className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-blue-500"
-                  onClick={() => scrollToSection(section)}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </a>
-              </li>
-            ))}
             <li>
-              <Button text="Coming!" onClick={() => navigate("/soon")} />
+              <a
+                className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-600"
+                onClick={() => scrollToSection(homeRef)}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-500"
+                onClick={() => scrollToSection(categoriesRef)}
+              >
+                Categories
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-600"
+                onClick={() => scrollToSection(aboutRef)}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-600"
+                onClick={() => scrollToSection(contactRef)}
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <Button text="New" onClick={() => navigate("/soon")} />
             </li>
             <li>
               <Button text="My World" onClick={() => navigate("/design")} />
@@ -100,4 +149,4 @@ const Button = ({ text, onClick }) => {
   );
 };
 
-export default Navbar;
+export default Navb;
