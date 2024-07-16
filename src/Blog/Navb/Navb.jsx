@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import logo from "./logo.png";
+import logo from "./logobl.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -28,7 +28,9 @@ const Navbar = () => {
     <nav className="bg-opacity-25 bg-black backdrop-blur-lg sticky top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         <div className="flex items-center">
-          <img className="h-10" src={logo} alt="JANEESH P" />
+          <button onClick={() => navigate("/")}>
+            <img className="h-10" src={logo} alt="JANEESH P" />
+          </button>
         </div>
         <div className="hidden md:flex space-x-6">
           <ul className="flex space-x-4">
@@ -65,21 +67,11 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <button className={buttonClasses} onClick={() => navigate("/blog")}>
-            Blog
+          <button className={buttonClasses} onClick={() => navigate("/")}>
+            Home
           </button>
           <button className={buttonClasses} onClick={() => navigate("/design")}>
             My World
-          </button>
-          <button
-            className={buttonClasses}
-            onClick={() =>
-              openLink(
-                "https://drive.google.com/file/d/1vji0j71bvfGj6-8DCcnIX9svwkS1IWte/view?usp=sharing"
-              )
-            }
-          >
-            RESUME
           </button>
         </div>
         <button
@@ -129,14 +121,6 @@ const Navbar = () => {
             <li>
               <button
                 className={buttonClasses}
-                onClick={() => navigate("/blog")}
-              >
-                Blog
-              </button>
-            </li>
-            <li>
-              <button
-                className={buttonClasses}
                 onClick={() => navigate("/design")}
               >
                 My World
@@ -144,19 +128,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                className={buttonClasses}
-                onClick={() =>
-                  openLink(
-                    "https://drive.google.com/file/d/1vji0j71bvfGj6-8DCcnIX9svwkS1IWte/view?usp=sharing"
-                  )
-                }
-              >
-                RESUME
-              </button>
-            </li>
-            <li>
-              <button
-                className="bg-gradient-to-r from-red-400 to-red-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-red-500 transition duration-300 w-full"
+                className="text-white text-lg font-medium"
                 onClick={() => setMenuOpen(false)}
               >
                 <FontAwesomeIcon icon={faTimes} />
