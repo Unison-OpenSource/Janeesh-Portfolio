@@ -75,7 +75,7 @@ const Navbar = () => {
             className={buttonClasses}
             onClick={() =>
               openLink(
-                "https://drive.google.com/file/d/1vji0j71bvfGj6-8DCcnIX9svwkS1IWte/view?usp=sharing"
+                "https://drive.google.com/file/d/1CIyyPauixAyC7iu6eUKEROT6rPUla78y/view?usp=sharing"
               )
             }
           >
