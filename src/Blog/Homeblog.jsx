@@ -5,7 +5,7 @@ const Homeblog = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 md:flex-row">
       <h1 className="text-4xl font-bold text-gray-800 mb-4 md:mb-0 md:mr-8">
         <Typewriter
-          words={["Welcome to the Blog"]}
+          words={["Welcome to the Blog KARUN"]}
           loop={1}
           cursor
           cursorStyle="_"
