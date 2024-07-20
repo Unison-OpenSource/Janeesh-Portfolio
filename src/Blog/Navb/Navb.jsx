@@ -1,18 +1,16 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logobl.png";
+import Homeblog from "../Homeblog";
+import Categories from "../Categories";
+import Posts from "../Posts";
+import Hacks from "../Hacks";
 
-const Navb = () => {
+const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Create refs for each section
-  const homeRef = useRef(null);
-  const categoriesRef = useRef(null);
-  const aboutRef = useRef(null);
-  const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
     if (ref.current) {
@@ -50,7 +48,7 @@ const Navb = () => {
             <li>
               <a
                 className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
-                onClick={() => scrollToSection(aboutRef)}
+                onClick={() => scrollToSection(postsRef)}
               >
                 Posts
               </a>
@@ -58,7 +56,7 @@ const Navb = () => {
             <li>
               <a
                 className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
-                onClick={() => scrollToSection(contactRef)}
+                onClick={() => scrollToSection(hacksRef)}
               >
                 Hacks
               </a>
@@ -75,7 +73,6 @@ const Navb = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-opacity-25 bg-black backdrop-blur-lg absolute top-0 left-0 w-full py-4">
           <ul className="flex flex-col items-center space-y-4">
@@ -98,17 +95,17 @@ const Navb = () => {
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-600"
-                onClick={() => scrollToSection(aboutRef)}
+                onClick={() => scrollToSection(postsRef)}
               >
-                About
+                Posts
               </a>
             </li>
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-600"
-                onClick={() => scrollToSection(contactRef)}
+                onClick={() => scrollToSection(hacksRef)}
               >
-                Contact
+                Hacks
               </a>
             </li>
             <li>

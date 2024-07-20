@@ -3,24 +3,24 @@ import Typewriter from "react-typewriter-effect";
 
 const Homeblog = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 md:flex-row">
-      <h1 className="text-4xl font-bold text-black mb-4 md:mb-0 md:mr-8">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-pink-100 md:flex-row">
+      <h1 className="text-4xl font-bold text-pink-800 mb-4 md:mb-0 md:mr-8">
         <Typewriter
           textStyle={{
-            fontFamily: "Red Hat Display",
-            color: "#00000",
-            fontWeight: 500,
-            fontSize: "2em",
+            fontFamily: "'Comic Sans MS', cursive",
+            color: "#D43F6C",
+            fontWeight: 600,
+            fontSize: "2.5em",
           }}
-          startDelay={2000}
-          cursorColor="#00000"
+          startDelay={1000}
+          cursorColor="#D43F6C"
           multiText={[
             "Welcome to the Blog",
             "Janeesh P Welcomes You",
-            "I love You",
+            "This site is under Construction",
           ]}
           multiTextDelay={1000}
-          typeSpeed={30}
+          typeSpeed={60}
           multiTextLoop
         />
       </h1>
