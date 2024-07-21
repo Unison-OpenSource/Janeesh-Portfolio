@@ -25,7 +25,7 @@ const DefaultIcon = L.icon({
 const Navbar = () => (
   <div className="text-center font-bold mb-2">
     <h1 className="text-xl md:text-2xl lg:text-3xl">
-      Open to Work in these Locations
+      Open to Work
     </h1>
   </div>
 );
