@@ -3,10 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logobl.png";
-import Homeblog from "../Homeblog";
-import Categories from "../Categories";
-import Posts from "../Posts";
-import Hacks from "../Hacks";
 
 const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
   const navigate = useNavigate();

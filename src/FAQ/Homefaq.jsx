@@ -3,12 +3,25 @@ import categoriesData from "./Faq.json"; // Import JSON data
 
 const CardsWithSearch = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("category1"); // Default category
+  const [selectedCategory, setSelectedCategory] = useState(""); // Default category
   const [cards, setCards] = useState([]);
+  const [categoryOptions, setCategoryOptions] = useState([]);
 
   useEffect(() => {
+    // Set available categories from categoriesData
+    const categories = Object.keys(categoriesData);
+    setCategoryOptions(categories);
+    
     // Load cards based on the selected category
-    setCards(categoriesData[selectedCategory] || []);
+    if (categories.length > 0) {
+      setSelectedCategory(categories[0]); // Set default category to the first one
+    }
+  }, []);
+
+  useEffect(() => {
+    if (selectedCategory) {
+      setCards(categoriesData[selectedCategory] || []);
+    }
   }, [selectedCategory]);
 
   const handleSearch = (event) => {
@@ -24,17 +37,19 @@ const CardsWithSearch = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
       {/* Category Selector */}
       <div className="w-full max-w-md mb-4">
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
-          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
-          <option value="category1">Category 1</option>
-          <option value="category2">Category 2</option>
-          <option value="category3">Category 3</option>
+          {categoryOptions.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
         </select>
       </div>
 
@@ -45,7 +60,7 @@ const CardsWithSearch = () => {
           placeholder="Search..."
           value={searchTerm}
           onChange={handleSearch}
-          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -54,10 +69,10 @@ const CardsWithSearch = () => {
         {filteredCards.map((card) => (
           <div
             key={card.id}
-            className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200"
+            className="bg-gray-200 shadow-md rounded-lg overflow-hidden border border-gray-300"
           >
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">{card.title}</h2>
+              <h2 className="text-xl font-bold mb-2 text-gray-700">{card.title}</h2>
               <p className="text-gray-600">{card.description}</p>
             </div>
           </div>

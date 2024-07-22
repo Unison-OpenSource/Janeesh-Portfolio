@@ -1,14 +1,51 @@
 {
-    "category1": [
-      { "id": 1, "title": "Card Title 1", "description": "This is a short description for card 1." },
-      { "id": 2, "title": "Card Title 2", "description": "This is a short description for card 2." }
+    "General": [
+      {
+        "id": 1,
+        "title": "What is the purpose of using a JavaScript framework like React?",
+        "description": "JavaScript frameworks like React help developers build complex user interfaces more efficiently by providing reusable components, managing state, and offering a virtual DOM for improved performance."
+      },
+      {
+        "id": 2,
+        "title": "How does Tailwind CSS differ from traditional CSS frameworks?",
+        "description": "Tailwind CSS is a utility-first framework that provides low-level utility classes to build custom designs directly in HTML. Unlike traditional CSS frameworks that offer predefined components, Tailwind gives you more control and flexibility to create unique designs."
+      }
     ],
-    "category2": [
-      { "id": 3, "title": "Card Title 3", "description": "This is a short description for card 3." },
-      { "id": 4, "title": "Card Title 4", "description": "This is a short description for card 4." }
+    "Newbie to Coding": [
+      {
+        "id": 3,
+        "title": "What is the difference between `var`, `let`, and `const` in JavaScript?",
+        "description": "In JavaScript: `var` is function-scoped and can be re-declared and updated; `let` is block-scoped and can be updated but not re-declared within the same scope; `const` is block-scoped and cannot be updated or re-declared; it is used for variables that should not change."
+      },
+      {
+        "id": 4,
+        "title": "What is a function in programming?",
+        "description": "A function is a reusable block of code that performs a specific task. Functions can take inputs (parameters), process them, and return an output. They help in organizing code and avoiding repetition."
+      }
     ],
-    "category3": [
-      { "id": 5, "title": "Card Title 5", "description": "This is a short description for card 5." }
+    "Intermediate in Coding": [
+      {
+        "id": 5,
+        "title": "What are higher-order functions in JavaScript?",
+        "description": "Higher-order functions are functions that take other functions as arguments or return them as results. Examples include `map`, `filter`, and `reduce`, which operate on arrays."
+      },
+      {
+        "id": 6,
+        "title": "What is asynchronous programming and why is it important?",
+        "description": "Asynchronous programming allows tasks to run in parallel, without blocking the main thread of execution. It is important for performing operations like network requests or file reading without freezing the user interface or slowing down the application."
+      }
+    ],
+    "Domain Specific": [
+      {
+        "id": 7,
+        "title": "What are the main principles of RESTful API design?",
+        "description": "The main principles of RESTful API design include stateless interactions, use of standard HTTP methods (GET, POST, PUT, DELETE), resource-based URIs, and representation of resources in formats like JSON or XML."
+      },
+      {
+        "id": 8,
+        "title": "How does supervised learning differ from unsupervised learning in machine learning?",
+        "description": "In supervised learning, models are trained on labeled data where the correct output is known. In unsupervised learning, models are trained on unlabeled data and must find patterns or relationships on their own, such as clustering or association."
+      }
     ]
   }
   
