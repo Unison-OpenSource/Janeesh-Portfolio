@@ -17,7 +17,7 @@ const Homeblog = () => {
           multiText={[
             "Welcome to the Blog",
             "Janeesh P Welcomes You",
-            "Hi da Macha",
+            "Work in Progress",
           ]}
           multiTextDelay={1000}
           typeSpeed={60}
