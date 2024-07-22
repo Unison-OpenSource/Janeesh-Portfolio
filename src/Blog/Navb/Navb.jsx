@@ -63,7 +63,7 @@ const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
             </li>
           </ul>
           <Button text="New" onClick={() => navigate("/soon")} />
-          <Button text="My World" onClick={() => navigate("/design")} />
+          <Button text="FAQs" onClick={() => navigate("/design")} />
         </div>
         <button
           className="md:hidden bg-gradient-to-r from-black to-black text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-black hover:text-white transition duration-300"
@@ -112,7 +112,7 @@ const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
               <Button text="New" onClick={() => navigate("/soon")} />
             </li>
             <li>
-              <Button text="My World" onClick={() => navigate("/design")} />
+              <Button text="FAQs" onClick={() => navigate("/design")} />
             </li>
             <li>
               <button
