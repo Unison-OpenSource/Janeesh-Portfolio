@@ -68,7 +68,7 @@ const Navbar = () => {
           <button className={buttonClasses} onClick={() => navigate("/blog")}>
             Blog
           </button>
-          <button className={buttonClasses} onClick={() => navigate("/design")}>
+          <button className={buttonClasses} onClick={() => navigate("/faq")}>
             FAQs
           </button>
           <button
@@ -137,7 +137,7 @@ const Navbar = () => {
             <li>
               <button
                 className={buttonClasses}
-                onClick={() => navigate("/design")}
+                onClick={() => navigate("/faq")}
               >
                 FAQs
               </button>

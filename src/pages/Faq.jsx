@@ -1,5 +1,5 @@
 import React from "react";
-import Homed from "../Design/Homed";
+import Homed from "../FAQ/Homefaq";
 
 const Design = () => {
   return (
