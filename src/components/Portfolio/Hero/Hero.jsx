@@ -45,7 +45,7 @@ const Hero = () => {
             <div className="w-72 h-72 border-2 border-blue-100 flex items-center justify-center overflow-hidden">
               <img
                 src={Profile}
-                className="w-full h-full object-cover transform transition-transform duration-300 ease-in-out hover:scale-110"
+                className="w-full h-full object-cover transform transition-transform duration-500 ease-out hover:scale-110"
                 alt="Profile"
               />
             </div>
