@@ -1,0 +1,14 @@
+{
+    "category1": [
+      { "id": 1, "title": "Card Title 1", "description": "This is a short description for card 1." },
+      { "id": 2, "title": "Card Title 2", "description": "This is a short description for card 2." }
+    ],
+    "category2": [
+      { "id": 3, "title": "Card Title 3", "description": "This is a short description for card 3." },
+      { "id": 4, "title": "Card Title 4", "description": "This is a short description for card 4." }
+    ],
+    "category3": [
+      { "id": 5, "title": "Card Title 5", "description": "This is a short description for card 5." }
+    ]
+  }
+  

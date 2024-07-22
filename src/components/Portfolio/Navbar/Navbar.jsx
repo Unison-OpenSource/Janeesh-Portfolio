@@ -79,7 +79,7 @@ const Navbar = () => {
               )
             }
           >
-            RESUME
+            My CV
           </button>
         </div>
         <button
@@ -151,7 +151,7 @@ const Navbar = () => {
                   )
                 }
               >
-                RESUME
+                MY CV
               </button>
             </li>
             <li>

@@ -1,27 +1,43 @@
-import React, { useState } from "react";
-
-// Sample card data
-const cardData = [
-  { id: 1, title: "Card Title 1", description: "This is a short description for card 1." },
-  { id: 2, title: "Card Title 2", description: "This is a short description for card 2." },
-  { id: 3, title: "Card Title 3", description: "This is a short description for card 3." },
-  { id: 4, title: "Card Title 4", description: "This is a short description for card 4." },
-  { id: 5, title: "Card Title 5", description: "This is a short description for card 5." },
-];
+import React, { useState, useEffect } from "react";
+import categoriesData from "./Faq.json"; // Import JSON data
 
 const CardsWithSearch = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("category1"); // Default category
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    // Load cards based on the selected category
+    setCards(categoriesData[selectedCategory] || []);
+  }, [selectedCategory]);
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredCards = cardData.filter((card) =>
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const filteredCards = cards.filter((card) =>
     card.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+      {/* Category Selector */}
+      <div className="w-full max-w-md mb-4">
+        <select
+          value={selectedCategory}
+          onChange={handleCategoryChange}
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+          <option value="category3">Category 3</option>
+        </select>
+      </div>
+
       {/* Search Bar */}
       <div className="w-full max-w-md mb-8">
         <input
