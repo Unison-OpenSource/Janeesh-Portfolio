@@ -1,21 +1,28 @@
 import React from "react";
+import PostCard from "./PostCard"; // Adjust the path as needed
 
-const Posts = ({ posts }) => {
+const Posts = () => {
+  const posts = [
+    {
+      id: 1,
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fYUJTGP_7VICM1ogQKKOLASmTGkRWfXM3g&s",
+    },
+    {
+      id: 2,
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fYUJTGP_7VICM1ogQKKOLASmTGkRWfXM3g&s",
+    },
+    // Add more posts as needed
+  ];
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 md:p-12">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6 md:mb-8">Posts</h2>
-      <div className="w-full max-w-4xl h-96 overflow-y-auto">
-        <ul className="flex flex-col space-y-4">
-          {posts.map((post) => (
-            <li
-              key={post.id}
-              className="p-4 bg-white shadow-md rounded-md hover:bg-gray-200 transition duration-300 transform hover:scale-105"
-            >
-              <h3 className="text-xl font-semibold text-gray-800">{post.title}</h3>
-              <p className="text-gray-600">{post.excerpt}</p>
-            </li>
-          ))}
-        </ul>
+    <div className="p-4 md:p-6">
+      <div className="space-y-4">
+        {posts.map((post) => (
+          <PostCard
+            key={post.id}
+            imageUrl={post.imageUrl}
+          />
+        ))}
       </div>
     </div>
   );
