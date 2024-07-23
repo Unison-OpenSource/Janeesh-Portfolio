@@ -1,8 +1,6 @@
 import React from "react";
 import PostCard from "./PostCard"; 
-import img from  "./1 (1).png"
-import jiimg from  "./1 (2).png"
-// Adjust the path as needed
+import img from "./img.png"
 
 const Posts = () => {
   const posts = [
@@ -12,7 +10,7 @@ const Posts = () => {
     },
     {
       id: 2,
-      imageUrl: jiimg,
+      imageUrl: img,
     },
     // Add more posts as needed
   ];

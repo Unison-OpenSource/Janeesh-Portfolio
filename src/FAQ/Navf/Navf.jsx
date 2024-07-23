@@ -24,7 +24,10 @@ const Navf = () => {
           className="md:hidden text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-black transition duration-300"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+          <FontAwesomeIcon
+            icon={menuOpen ? faTimes : faBars}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+          />
         </button>
       </div>
 
@@ -42,7 +45,7 @@ const Navf = () => {
                 className="text-white text-lg font-medium"
                 onClick={() => setMenuOpen(false)}
               >
-                <FontAwesomeIcon icon={faTimes} />
+                <FontAwesomeIcon icon={faTimes} aria-label="Close menu" />
               </button>
             </li>
           </ul>
