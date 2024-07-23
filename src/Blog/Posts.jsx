@@ -1,15 +1,18 @@
 import React from "react";
-import PostCard from "./PostCard"; // Adjust the path as needed
+import PostCard from "./PostCard"; 
+import img from  "./1 (1).png"
+import jiimg from  "./1 (2).png"
+// Adjust the path as needed
 
 const Posts = () => {
   const posts = [
     {
       id: 1,
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fYUJTGP_7VICM1ogQKKOLASmTGkRWfXM3g&s",
+      imageUrl: img,
     },
     {
       id: 2,
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fYUJTGP_7VICM1ogQKKOLASmTGkRWfXM3g&s",
+      imageUrl: jiimg,
     },
     // Add more posts as needed
   ];

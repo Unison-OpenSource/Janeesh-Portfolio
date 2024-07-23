@@ -1,8 +1,0 @@
-{
-    "posts": [
-      { "id": 1, "title": "Tech Post 1", "excerpt": "This is a tech post.", "imageUrl": "https://via.placeholder.com/150" },
-      { "id": 2, "title": "Lifestyle Post 1", "excerpt": "This is a lifestyle post.", "imageUrl": "https://via.placeholder.com/150" }
-      // Add more posts as needed
-    ]
-  }
-  
