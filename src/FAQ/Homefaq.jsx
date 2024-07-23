@@ -43,7 +43,7 @@ const CardsWithSearch = () => {
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
-          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-0 focus:border-gray-500"
         >
           {categoryOptions.map((category) => (
             <option key={category} value={category}>
@@ -60,7 +60,7 @@ const CardsWithSearch = () => {
           placeholder="Search..."
           value={searchTerm}
           onChange={handleSearch}
-          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-0 focus:border-gray-500"
         />
       </div>
 

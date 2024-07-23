@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "John Doe",
+      "subheading": "Senior Developer",
+      "description": "John has over 10 years of experience in software development and specializes in full-stack development."
+    },
+    {
+      "id": 2,
+      "title": "Jane Smith",
+      "subheading": "UI/UX Designer",
+      "description": "Jane is an expert in user interface and user experience design with a keen eye for detail."
+    },
+    {
+      "id": 3,
+      "title": "Alice Johnson",
+      "subheading": "Data Scientist",
+      "description": "Alice specializes in data analysis and machine learning with a strong background in statistics."
+    },
+    {
+      "id": 4,
+      "title": "Bob Brown",
+      "subheading": "Project Manager",
+      "description": "Bob has extensive experience in managing projects and teams, ensuring successful project delivery."
+    },
+    {
+      "id": 5,
+      "title": "Charlie Davis",
+      "subheading": "Frontend Developer",
+      "description": "Charlie focuses on creating seamless and interactive user interfaces with modern web technologies."
+    },
+    {
+      "id": 6,
+      "title": "Eve Adams",
+      "subheading": "Backend Developer",
+      "description": "Eve is skilled in server-side development and database management, ensuring robust backend systems."
+    },
+    {
+      "id": 7,
+      "title": "Frank Moore",
+      "subheading": "DevOps Engineer",
+      "description": "Frank excels in automating deployment processes and managing cloud infrastructure."
+    },
+    {
+      "id": 8,
+      "title": "Grace Lee",
+      "subheading": "Product Designer",
+      "description": "Grace is passionate about designing user-centered products and improving user experiences."
+    }
+  ]
+  

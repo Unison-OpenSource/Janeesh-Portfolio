@@ -1,51 +1,138 @@
 {
-    "General": [
-      {
-        "id": 1,
-        "title": "What is the purpose of using a JavaScript framework like React?",
-        "description": "JavaScript frameworks like React help developers build complex user interfaces more efficiently by providing reusable components, managing state, and offering a virtual DOM for improved performance."
-      },
-      {
-        "id": 2,
-        "title": "How does Tailwind CSS differ from traditional CSS frameworks?",
-        "description": "Tailwind CSS is a utility-first framework that provides low-level utility classes to build custom designs directly in HTML. Unlike traditional CSS frameworks that offer predefined components, Tailwind gives you more control and flexibility to create unique designs."
-      }
-    ],
-    "Newbie to Coding": [
-      {
-        "id": 3,
-        "title": "What is the difference between `var`, `let`, and `const` in JavaScript?",
-        "description": "In JavaScript: `var` is function-scoped and can be re-declared and updated; `let` is block-scoped and can be updated but not re-declared within the same scope; `const` is block-scoped and cannot be updated or re-declared; it is used for variables that should not change."
-      },
-      {
-        "id": 4,
-        "title": "What is a function in programming?",
-        "description": "A function is a reusable block of code that performs a specific task. Functions can take inputs (parameters), process them, and return an output. They help in organizing code and avoiding repetition."
-      }
-    ],
-    "Intermediate in Coding": [
-      {
-        "id": 5,
-        "title": "What are higher-order functions in JavaScript?",
-        "description": "Higher-order functions are functions that take other functions as arguments or return them as results. Examples include `map`, `filter`, and `reduce`, which operate on arrays."
-      },
-      {
-        "id": 6,
-        "title": "What is asynchronous programming and why is it important?",
-        "description": "Asynchronous programming allows tasks to run in parallel, without blocking the main thread of execution. It is important for performing operations like network requests or file reading without freezing the user interface or slowing down the application."
-      }
-    ],
-    "Domain Specific": [
-      {
-        "id": 7,
-        "title": "What are the main principles of RESTful API design?",
-        "description": "The main principles of RESTful API design include stateless interactions, use of standard HTTP methods (GET, POST, PUT, DELETE), resource-based URIs, and representation of resources in formats like JSON or XML."
-      },
-      {
-        "id": 8,
-        "title": "How does supervised learning differ from unsupervised learning in machine learning?",
-        "description": "In supervised learning, models are trained on labeled data where the correct output is known. In unsupervised learning, models are trained on unlabeled data and must find patterns or relationships on their own, such as clustering or association."
-      }
-    ]
-  }
-  
+  "General": [
+    {
+      "id": 1,
+      "title": "What is the purpose of using a JavaScript framework like React?",
+      "description": "JavaScript frameworks like React help developers build complex user interfaces more efficiently by providing reusable components, managing state, and offering a virtual DOM for improved performance."
+    },
+    {
+      "id": 2,
+      "title": "How does Tailwind CSS differ from traditional CSS frameworks?",
+      "description": "Tailwind CSS is a utility-first framework that provides low-level utility classes to build custom designs directly in HTML. Unlike traditional CSS frameworks that offer predefined components, Tailwind gives you more control and flexibility to create unique designs."
+    },
+    {
+      "id": 3,
+      "title": "What is a JavaScript library?",
+      "description": "A JavaScript library is a collection of pre-written JavaScript code that helps developers perform common tasks, such as DOM manipulation or event handling, more easily. React is an example of a JavaScript library."
+    }
+  ],
+  "Newbie to Coding": [
+    {
+      "id": 4,
+      "title": "What is the difference between `var`, `let`, and `const` in JavaScript?",
+      "description": "In JavaScript: `var` is function-scoped and can be re-declared and updated; `let` is block-scoped and can be updated but not re-declared within the same scope; `const` is block-scoped and cannot be updated or re-declared; it is used for variables that should not change."
+    },
+    {
+      "id": 5,
+      "title": "What is a function in programming?",
+      "description": "A function is a reusable block of code that performs a specific task. Functions can take inputs (parameters), process them, and return an output. They help in organizing code and avoiding repetition."
+    },
+    {
+      "id": 6,
+      "title": "What is a variable in programming?",
+      "description": "A variable is a storage location identified by a name that holds data which can be changed during the execution of a program. Variables are used to store and manipulate values such as numbers, strings, and objects."
+    }
+  ],
+  "Intermediate in Coding": [
+    {
+      "id": 7,
+      "title": "What are higher-order functions in JavaScript?",
+      "description": "Higher-order functions are functions that take other functions as arguments or return them as results. Examples include `map`, `filter`, and `reduce`, which operate on arrays."
+    },
+    {
+      "id": 8,
+      "title": "What is asynchronous programming and why is it important?",
+      "description": "Asynchronous programming allows tasks to run in parallel, without blocking the main thread of execution. It is important for performing operations like network requests or file reading without freezing the user interface or slowing down the application."
+    },
+    {
+      "id": 9,
+      "title": "What is an array in JavaScript?",
+      "description": "An array is a data structure that stores a collection of elements, which can be of any type. Arrays are zero-indexed and provide methods to access, modify, and iterate over the stored elements."
+    }
+  ],
+  "Domain Specific": [
+    {
+      "id": 10,
+      "title": "What are the main principles of RESTful API design?",
+      "description": "The main principles of RESTful API design include stateless interactions, use of standard HTTP methods (GET, POST, PUT, DELETE), resource-based URIs, and representation of resources in formats like JSON or XML."
+    },
+    {
+      "id": 11,
+      "title": "How does supervised learning differ from unsupervised learning in machine learning?",
+      "description": "In supervised learning, models are trained on labeled data where the correct output is known. In unsupervised learning, models are trained on unlabeled data and must find patterns or relationships on their own, such as clustering or association."
+    },
+    {
+      "id": 12,
+      "title": "What is a database in the context of web development?",
+      "description": "A database is a structured collection of data that can be easily accessed, managed, and updated. In web development, databases store information like user data, application settings, and content, and can be relational (like SQL databases) or non-relational (like NoSQL databases)."
+    }
+  ],
+  "Advanced Topics": [
+    {
+      "id": 13,
+      "title": "What is the concept of closures in JavaScript?",
+      "description": "Closures are functions that have access to variables from their containing (enclosing) function, even after the containing function has finished executing. This allows for private variables and functions within a closure."
+    },
+    {
+      "id": 14,
+      "title": "What are React Hooks and why are they used?",
+      "description": "React Hooks are functions that let you use state and other React features without writing a class. They provide a more functional approach to managing state and lifecycle methods in functional components."
+    },
+    {
+      "id": 15,
+      "title": "What is a JavaScript Promise and how does it work?",
+      "description": "A JavaScript Promise is an object representing the eventual completion or failure of an asynchronous operation. It allows you to handle asynchronous results using `.then()` for success and `.catch()` for errors, making code easier to manage."
+    }
+  ],
+  "DevOps": [
+    {
+      "id": 16,
+      "title": "What is Continuous Integration (CI) and how does it benefit development?",
+      "description": "Continuous Integration (CI) is a practice where code changes are automatically tested and integrated into the main codebase frequently. This helps in catching bugs early, improving code quality, and facilitating smoother releases."
+    },
+    {
+      "id": 17,
+      "title": "What is Docker and how does it simplify deployment?",
+      "description": "Docker is a platform that enables developers to package applications and their dependencies into containers. Containers are lightweight and portable, making it easier to deploy applications consistently across different environments."
+    },
+    {
+      "id": 18,
+      "title": "What is a version control system and why is it important?",
+      "description": "A version control system (VCS) is a tool that tracks changes to source code over time. It allows multiple developers to collaborate on a project, revert to previous versions, and maintain a history of changes, which is crucial for managing code and ensuring collaboration."
+    }
+  ],
+  "Security": [
+    {
+      "id": 19,
+      "title": "What is Cross-Site Scripting (XSS) and how can it be prevented?",
+      "description": "Cross-Site Scripting (XSS) is a security vulnerability where an attacker injects malicious scripts into content from otherwise trusted websites. It can be prevented by validating and sanitizing user inputs and using appropriate content security policies."
+    },
+    {
+      "id": 20,
+      "title": "What are the principles of secure password management?",
+      "description": "Secure password management principles include using strong, unique passwords, storing passwords securely (e.g., hashed and salted), and employing multi-factor authentication to add an additional layer of security."
+    },
+    {
+      "id": 21,
+      "title": "What is HTTPS and why is it important for web security?",
+      "description": "HTTPS (HyperText Transfer Protocol Secure) is an extension of HTTP that uses encryption (via SSL/TLS) to secure data transmitted between the user's browser and the web server. It is important for protecting sensitive information and ensuring secure communication."
+    }
+  ],
+  "Performance Optimization": [
+    {
+      "id": 22,
+      "title": "What is lazy loading and how does it improve performance?",
+      "description": "Lazy loading is a technique where resources are only loaded when they are needed rather than at initial page load. This improves performance by reducing initial load time and conserving bandwidth."
+    },
+    {
+      "id": 23,
+      "title": "What is memoization and how can it be used to optimize performance?",
+      "description": "Memoization is an optimization technique where the results of expensive function calls are cached so that subsequent calls with the same inputs can return the cached result instead of recomputing it."
+    },
+    {
+      "id": 24,
+      "title": "What is image optimization and why is it important for web performance?",
+      "description": "Image optimization involves compressing and resizing images to reduce their file size without significantly affecting quality. It is important for web performance as it helps decrease page load times and improves user experience."
+    }
+  ]
+}

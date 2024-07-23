@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Homeblog from "../Blog/Homeblog";
 import Navb from "../Blog/Navb/Navb";
-import Categories from "../Blog/Categories";
+import Mentors from "../Blog/Mentors";
 import Hacks from "../Blog/Hacks";
 import Posts from "../Blog/Posts";
 
@@ -20,7 +20,7 @@ const Blog = () => {
 
   // Refs for sections
   const homeRef = useRef(null);
-  const categoriesRef = useRef(null);
+  const mentorsRef = useRef(null);
   const postsRef = useRef(null);
   const hacksRef = useRef(null);
 
@@ -28,15 +28,15 @@ const Blog = () => {
     <>
       <Navb
         homeRef={homeRef}
-        categoriesRef={categoriesRef}
+        mentorsRef={mentorsRef}
         postsRef={postsRef}
         hacksRef={hacksRef}
       />
       <div ref={homeRef}>
         <Homeblog />
       </div>
-      <div ref={categoriesRef}>
-        <Categories onSelectCategory={setSelectedCategory} />
+      <div ref={mentorsRef}>
+        <Mentors onSelectMentor={setSelectedCategory} />
       </div>
       <div ref={postsRef}>
         <Posts posts={filteredPosts} />

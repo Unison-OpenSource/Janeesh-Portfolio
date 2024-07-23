@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logobl.png";
 
-const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
+const Navb = ({ homeRef, mentorsRef, postsRef, hacksRef }) => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,9 +36,9 @@ const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
             <li>
               <a
                 className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
-                onClick={() => scrollToSection(categoriesRef)}
+                onClick={() => scrollToSection(mentorsRef)}
               >
-                Categories
+                Mentors
               </a>
             </li>
             <li>
@@ -83,9 +83,9 @@ const Navb = ({ homeRef, categoriesRef, postsRef, hacksRef }) => {
             <li>
               <a
                 className="text-white text-lg font-medium cursor-pointer transition duration-300 hover:text-purple-500"
-                onClick={() => scrollToSection(categoriesRef)}
+                onClick={() => scrollToSection(mentorsRef)}
               >
-                Categories
+                Mentors
               </a>
             </li>
             <li>
