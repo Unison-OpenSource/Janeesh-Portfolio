@@ -2,6 +2,7 @@ import React from "react";
 import PostCard from "./PostCard"; 
 import img from "./img.png"
 
+
 const Posts = () => {
   const posts = [
     {
