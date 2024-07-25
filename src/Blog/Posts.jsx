@@ -10,7 +10,7 @@ const Posts = () => {
     },
     {
       id: 2,
-      imageUrl: img,
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8AAxAr9ZNr9JCwn2QZ35rSWWuiayhh0ayQ&s",
     },
     // Add more posts as needed
   ];

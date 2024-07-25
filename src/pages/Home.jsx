@@ -4,7 +4,6 @@ import Skill from "../components/Portfolio/Skills/Skill";
 import Projects from "../components/Portfolio/Projects/Projects";
 import About from "../components/Portfolio/AboutMe/AboutMe";
 import Footer from "../components/Portfolio/Footer";
-import Map from "../components/Portfolio/Map";
 const Home = () => {
   return (
     <>
@@ -24,7 +23,6 @@ const Home = () => {
         </div>
         <div>
         <Footer />
-          <Map />
         </div>
       </div>
     </>

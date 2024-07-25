@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import categoriesData from "./Faq.json"; // Import JSON data
+import categoriesData from "./Faq.json";
+import Snippet from "./Snippet";
 
-const CardsWithSearch = () => {
+const Homefaq = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(""); // Default category
   const [cards, setCards] = useState([]);
@@ -11,7 +12,7 @@ const CardsWithSearch = () => {
     // Set available categories from categoriesData
     const categories = Object.keys(categoriesData);
     setCategoryOptions(categories);
-    
+
     // Load cards based on the selected category
     if (categories.length > 0) {
       setSelectedCategory(categories[0]); // Set default category to the first one
@@ -37,13 +38,13 @@ const CardsWithSearch = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-900">
       {/* Category Selector */}
-      <div className="w-full max-w-md mb-4">
+      <div className="w-full max-w-md mb-6">
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
-          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-0 focus:border-gray-500"
+          className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-0 focus:border-gray-500"
         >
           {categoryOptions.map((category) => (
             <option key={category} value={category}>
@@ -60,7 +61,7 @@ const CardsWithSearch = () => {
           placeholder="Search..."
           value={searchTerm}
           onChange={handleSearch}
-          className="w-full p-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-0 focus:border-gray-500"
+          className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-0 focus:border-gray-500"
         />
       </div>
 
@@ -69,17 +70,20 @@ const CardsWithSearch = () => {
         {filteredCards.map((card) => (
           <div
             key={card.id}
-            className="bg-gray-200 shadow-md rounded-lg overflow-hidden border border-gray-300"
+            className="bg-gray-800 shadow-md rounded-lg overflow-hidden border border-gray-700 transform transition-transform duration-500 hover:scale-105 hover:shadow-lg"
           >
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2 text-gray-700">{card.title}</h2>
-              <p className="text-gray-600">{card.description}</p>
+              <h2 className="text-xl font-bold mb-2 text-white">
+                {card.title}
+              </h2>
+              <p className="text-gray-300">{card.description}</p>
             </div>
           </div>
         ))}
       </div>
+      <Snippet/>
     </div>
   );
 };
 
-export default CardsWithSearch;
+export default Homefaq;
