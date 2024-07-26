@@ -47,7 +47,7 @@ const Homeblog = () => {
           }
         }
         .slide-animation {
-          animation: slide 5s infinite;
+          animation: slide 12s infinite;
         }
       `}</style>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import PostCard from "./PostCard"; 
-import img from "./img.png"
-
+import PostCard from "./PostCard";
+import img from "./img.png";
+import Graph from "./Graph";
 
 const Posts = () => {
   const posts = [
@@ -11,19 +11,18 @@ const Posts = () => {
     },
     {
       id: 2,
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8AAxAr9ZNr9JCwn2QZ35rSWWuiayhh0ayQ&s",
+      imageUrl:
+        "https://wallpapers-clan.com/wp-content/uploads/2024/07/aesthetic-cityscape-sunset-bridge-desktop-wallpaper-cover.jpg",
     },
     // Add more posts as needed
   ];
 
   return (
     <div className="p-4 md:p-6">
+      <Graph />
       <div className="space-y-4">
         {posts.map((post) => (
-          <PostCard
-            key={post.id}
-            imageUrl={post.imageUrl}
-          />
+          <PostCard key={post.id} imageUrl={post.imageUrl} />
         ))}
       </div>
     </div>
