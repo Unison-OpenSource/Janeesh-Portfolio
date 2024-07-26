@@ -38,7 +38,7 @@ const Navb = ({ homeRef, mentorsRef, postsRef, hacksRef }) => {
                 className="text-white text-xl p-1 font-medium cursor-pointer transition duration-300 hover:text-purple-600"
                 onClick={() => scrollToSection(mentorsRef)}
               >
-                Mentors
+                
               </a>
             </li>
             <li>

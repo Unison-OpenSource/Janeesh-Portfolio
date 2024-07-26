@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import categoriesData from "./Faq.json";
 import Snippet from "./Snippet";
+import Github from "./GitHub";
 
 const Homefaq = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -81,7 +82,8 @@ const Homefaq = () => {
           </div>
         ))}
       </div>
-      <Snippet/>
+      <Snippet />
+      <Github />
     </div>
   );
 };
