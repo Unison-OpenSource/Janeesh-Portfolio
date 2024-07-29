@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logo.png";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (id) => {
@@ -65,12 +63,13 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <button className={buttonClasses} onClick={() => navigate("/blog")}>
+          <button
+            className={buttonClasses}
+            onClick={() => openLink("https://www.google.com")}
+          >
             Blog
           </button>
-          <button className={buttonClasses} onClick={() => navigate("/faq")}>
-            FAQs
-          </button>
+
           <button
             className={buttonClasses}
             onClick={() =>
@@ -129,19 +128,12 @@ const Navbar = () => {
             <li>
               <button
                 className={buttonClasses}
-                onClick={() => navigate("/blog")}
+                onClick={() => openLink("https://www.google.com")}
               >
                 Blog
               </button>
             </li>
-            <li>
-              <button
-                className={buttonClasses}
-                onClick={() => navigate("/faq")}
-              >
-                FAQs
-              </button>
-            </li>
+
             <li>
               <button
                 className={buttonClasses}

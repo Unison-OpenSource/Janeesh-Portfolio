@@ -7,6 +7,9 @@ module.exports = {
         "custom-blue": "#0e0927",
         "custom-violet": "#0d0921",
       },
+      padding: {
+        "9/16": "56.25%", // 16:9 aspect ratio
+      },
     },
   },
   plugins: [],

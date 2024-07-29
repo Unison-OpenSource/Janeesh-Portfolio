@@ -1,19 +1,35 @@
-// src/App.jsx
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
-import Design from "./pages/Faq";
-import Soon from "./pages/Soon";
-function App() {
+import Navbar from "./components/Portfolio/Navbar/Navbar";
+import Hero from "./components/Portfolio/Hero/Hero";
+import Skill from "./components/Portfolio/Skills/Skill";
+import Projects from "./components/Portfolio/Projects/Projects";
+import About from "./components/Portfolio/AboutMe/AboutMe";
+import Footer from "./components/Portfolio/Footer";
+import Github from "./components/Portfolio/GitHub";
+const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/faq" element={<Design />} />
-      <Route path="/soon" element={<Soon />} />
-    </Routes>
+    <>
+      <Navbar />
+      <div className="container">
+        <div id="home">
+          <Hero />
+        </div>
+        <div id="skills">
+          <Skill />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <About />
+        </div>
+        <div>
+          <Github />
+          <Footer />
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
