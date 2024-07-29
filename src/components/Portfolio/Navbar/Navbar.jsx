@@ -65,9 +65,9 @@ const Navbar = () => {
           </ul>
           <button
             className={buttonClasses}
-            onClick={() => openLink("https://www.google.com")}
+            onClick={() => openLink("https://unisonreactjs.web.app/")}
           >
-            Blog
+            Hit Me!
           </button>
 
           <button
@@ -128,9 +128,9 @@ const Navbar = () => {
             <li>
               <button
                 className={buttonClasses}
-                onClick={() => openLink("https://www.google.com")}
+                onClick={() => openLink("https://unisonreactjs.web.app/")}
               >
-                Blog
+                Hit Me!
               </button>
             </li>
 
