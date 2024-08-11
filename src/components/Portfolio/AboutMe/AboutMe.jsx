@@ -1,7 +1,6 @@
 import Aboutmeinfocard from "./Aboutmeinfocard/Aboutmeinfocard";
 import github from "./github.svg";
 import linkedin from "./LinkedIN.png";
-import Instagram from "./Instagram.png";
 import What from "./wi.png";
 import x from "./xx.jpg";
 import yt from "./yt.png";
@@ -17,15 +16,6 @@ const AboutMe = () => {
 
       <div className="flex flex-wrap justify-center mb-8">
         {/* Centering social media cards */}
-        <div className="w-1/3 sm:w-1/4 lg:w-1/6 mb-4 flex justify-center">
-          <a
-            href="https://www.instagram.com/janeeshp_"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Aboutmeinfocard iconUrl={Instagram} text="janeeshp_" />
-          </a>
-        </div>
         <div className="w-1/3 sm:w-1/4 lg:w-1/6 mb-4 flex justify-center">
           <a
             href="https://x.com/janeeshofficial"
